@@ -11,6 +11,7 @@
       {% postcss %}
         {% include "../../assets/styles/main.scss" %}
       {% endpostcss %}
+      {% block css %}{% endblock %}
     </style>
 
     <meta property='og:site_name' content='Molly White' />
@@ -35,7 +36,7 @@
     <link rel="me" href="https://hachyderm.io/@molly0xfff" />
     <meta name="theme-color" content="#161616" />
   </head>
-  <main>{{ content | safe }}</main>
+  {% block content %}{% endblock %}
 
   <script src="/assets/js/main.js"></script>
 </html>

@@ -1,14 +1,20 @@
 :root {
   --bg-color: #ffffff;
   --main-text-color: #444444;
+  --link-text-hover: #888888;
+  --hr-color: #dddddd;
 
   @media (prefers-color-scheme: dark) {
     --bg-color: #161616;
     --main-text-color: #f1f1f1;
+    --link-text-hover: #aaaaaa;
+    --hr-color: #aaaaaa;
   }
 }
-    
+
 [data-theme="dark"] {
   --bg-color: #161616;
   --main-text-color: #f1f1f1;
+  --link-text-hover: #aaaaaa;
+  --hr-color: #aaaaaa;
 }

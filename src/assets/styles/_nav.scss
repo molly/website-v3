@@ -1,0 +1,41 @@
+nav {
+  max-width: 20rem;
+  flex: 1;
+  padding: 0 4rem 0 2rem;
+  font-size: 1rem;
+  line-height: 1rem;
+
+  .logo-image {
+    max-width: 100%;
+    border: 3px double var(--hr-color);
+    padding: 0.5rem;
+
+    img {
+      width: 100%;
+      object-fit: contain;
+      display: block;
+    }
+  }
+
+  .logo-text {
+    font-weight: normal;
+    text-align: center;
+    margin: 0.75rem 0;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 1rem 0;
+
+    li {
+      padding: 0.25rem 0rem 0.25rem 0.5rem;
+
+      &.nav-header {
+        padding-left: 0;
+        font-weight: 700;
+        font-variant: small-caps;
+      }
+    }
+  }
+}

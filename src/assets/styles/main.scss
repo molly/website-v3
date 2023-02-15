@@ -2,10 +2,47 @@
 @import "_fonts.scss";
 @import "_tokens.scss";
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: var(--bg-color);
   color: var(--main-text-color);
   font-family: SourceSerif, "Times New Roman", serif;
+  font-size: 1.25rem;
   font-feature-settings: "kern" 1, "liga" 1;
   font-optical-sizing: auto;
+  line-height: 1.75rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+a {
+  color: var(--main-text-color);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+
+  &:hover {
+    color: var(--link-text-hover);
+  }
+}
+
+hr {
+  border: 0;
+  border-bottom: 1px solid var(--hr-color);
+}
+
+.page-container {
+  max-width: 80rem;
+  margin: 5rem auto 3rem auto;
+  padding: 1rem;
 }

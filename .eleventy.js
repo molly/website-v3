@@ -11,6 +11,7 @@ module.exports = function (eleventyConfig) {
     "**/*.webmanifest": "",
   });
 
+  // Render CSS inline
   eleventyConfig.addPairedShortcode("postcss", async (code) => {
     const filepath = path.join(__dirname, "src/assets/styles/main.scss");
     return await postcss([
@@ -22,6 +23,8 @@ module.exports = function (eleventyConfig) {
       .process(code, { from: filepath })
       .then((result) => result.css);
   });
+
+  eleventyConfig.setServerOptions({});
 
   return {
     dir: {
