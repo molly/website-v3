@@ -1,0 +1,35 @@
+{
+  "name": "website-v3",
+  "version": "1.0.0",
+  "description": "v3 of my personal website",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf dist/*",
+    "start": "npx @11ty/eleventy --serve",
+    "build": "npx @11ty/eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/molly/website-v3.git"
+  },
+  "author": "Molly White",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/molly/website-v3/issues"
+  },
+  "homepage": "https://github.com/molly/website-v3#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.0",
+    "@csstools/postcss-sass": "^5.0.1",
+    "autoprefixer": "^10.4.13",
+    "clean-css": "^5.3.2",
+    "cssnano": "^5.1.14",
+    "eleventy-sass": "^2.1.7",
+    "postcss": "^8.4.21",
+    "postcss-import": "^15.1.0",
+    "rimraf": "^4.1.2"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
+}

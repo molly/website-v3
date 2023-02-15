@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>{{ title }}</title>
+
+ 
+    <style>
+      {% postcss %}
+        {% include "../../assets/styles/main.scss" %}
+      {% endpostcss %}
+    </style>
+
+    <meta property='og:site_name' content='Molly White' />
+    <meta property="og:title" content="{{title}}" />
+    {% if description %}
+      <meta name="description" content="{{description}}" />
+      <meta property="og:description" content="{{description}}" />
+    {% endif %}
+    <meta property="og:image" content="https://www.mollywhite.net/assets/images/{{image | default('molly_illustration.png')}}" />
+    <meta property="og:image:alt" content="{{image_description | default('An illustration of Molly sitting crosslegged with a laptop on her lap')}}" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="og:url" content="https://www.mollywhite.net{{ path }}" />
+    <link rel="canonical" href="https://www.mollywhite.net{{ path }}" />
+
+    <link rel="icon" href="/assets/images/icons/favicon.ico" />
+    <link rel="icon" href="/assets/images/icons/favicon-16x16.png" sizes="16x16" type="image/png"/>
+    <link rel="icon" href="/assets/images/icons/favicon-32x32.png" sizes="32x32" type="image/png" />
+    <link rel="apple-touch-icon" href="/assets/images/icons/apple-touch-icon.png" sizes="180x180"/>
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="me" href="https://hachyderm.io/@molly0xfff" />
+    <meta name="theme-color" content="#161616" />
+  </head>
+  <main>{{ content | safe }}</main>
+
+  <script src="/assets/js/main.js"></script>
+</html>
