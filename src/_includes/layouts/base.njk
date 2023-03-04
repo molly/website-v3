@@ -7,11 +7,10 @@
     <title>{{ title }}</title>
 
  
+    <link rel="stylesheet" href="./assets/base-styles.css" />
     <style>
-      {% postcss %}
-        {% include "../../assets/styles/main.scss" %}
-      {% endpostcss %}
-      {% block css %}{% endblock %}
+      {% block css %}
+      {% endblock %}
     </style>
 
     <meta property='og:site_name' content='Molly White' />

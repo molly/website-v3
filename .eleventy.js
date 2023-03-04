@@ -24,7 +24,13 @@ module.exports = function (eleventyConfig) {
       .then((result) => result.css);
   });
 
-  eleventyConfig.setServerOptions({});
+  eleventyConfig.setServerOptions({
+    module: "@11ty/eleventy-server-browsersync",
+    middleware: function (req, res, next) {
+      res.setHeader("Access-Control-Allow-Origin", "*");
+      next();
+    },
+  });
 
   return {
     dir: {
