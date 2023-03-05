@@ -1,13 +1,13 @@
 {% extends "layouts/base.njk" %}
 
 {% block css %}
-  {% postcss %}
-    {% include "../../assets/styles/home.scss" %}
-  {% endpostcss %}
+{% postcss %}
+{% include "../../assets/styles/nav.scss" %}
+{% endpostcss %}
 {% endblock %}
 
 {% block content %}
-<div class="page-container home">
+<div class="page-container {{page_class}}">
   {% include "nav.njk" %}
   <main>{{ content | safe }}</main>
 </div>
