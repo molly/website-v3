@@ -77,4 +77,14 @@ nav {
       }
     }
   }
+
+  .no-js {
+    .menu-toggle {
+      display: none;
+    }
+
+    nav .nav-links.collapsed {
+      display: block;
+    }
+  }
 }
