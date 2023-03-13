@@ -42,6 +42,12 @@ nav {
 
   .menu-toggle {
     display: none;
+    padding: 0.5rem;
+    margin: 1rem 0;
+    border: 1px solid var(--main-text-color);
+    background-color: var(--bg-color);
+    align-self: center;
+    color: var(--main-text-color);
   }
 }
 
@@ -62,11 +68,6 @@ nav {
 
     .menu-toggle {
       display: block;
-      padding: 0.5rem;
-      margin: 1rem 0;
-      border: 1px solid var(--main-text-color);
-      background-color: var(--bg-color);
-      align-self: center;
     }
 
     .nav-links {
