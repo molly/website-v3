@@ -268,3 +268,16 @@ hr {
     }
   }
 }
+
+// RESPONSIVE
+@media screen and (max-width: 768px) {
+  .page-container {
+    margin-top: 1rem;
+    flex-direction: column;
+  }
+
+  h1.title {
+    margin-top: 1rem;
+    text-align: center;
+  }
+}
