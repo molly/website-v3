@@ -93,6 +93,10 @@ hr {
   border-bottom: 1px solid var(--hr-color);
 }
 
+.blank-page-container {
+  margin: 1rem;
+}
+
 .page-container {
   max-width: 80rem;
   margin: 5rem auto 3rem auto;
@@ -102,6 +106,10 @@ hr {
   main {
     flex: 1;
   }
+}
+
+.mini-nav {
+  margin-bottom: 2rem;
 }
 
 // Helpers

@@ -1,0 +1,45 @@
+.ftx-contagion .content-box {
+  margin: 0 auto;
+  max-width: 1600px;
+
+  .graphics-wrapper {
+    margin-bottom: 50px;
+  }
+  .legend {
+    width: 250px;
+
+    img {
+      width: 100%;
+    }
+  }
+  .contagion {
+    min-width: 1000px;
+  }
+  @media screen and (min-width: 1201px) {
+    .graphics-wrapper {
+      position: relative;
+
+      .legend {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      .contagion {
+        width: 100%;
+      }
+    }
+  }
+  @media screen and (max-width: 1200px) {
+    .graphics-wrapper {
+      display: flex;
+      flex-direction: column;
+
+      .legend {
+        width: 200px;
+      }
+      .contagion {
+        flex: 1;
+      }
+    }
+  }
+}
