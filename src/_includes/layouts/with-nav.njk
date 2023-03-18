@@ -1,18 +1,15 @@
 {% extends "layouts/base.njk" %}
+{% set pagecss = "nav.scss" %}
 
-{% block css %}
-{% postcss %}
-{% include "../../assets/styles/nav.scss" %}
-{% endpostcss %}
-{% endblock %}
-
-{% block content %}
-<div class="page-container {{page_class}}">
-  {% include "nav.njk" %}
-  <main>{{ content | safe }}</main>
-</div>
+{% block pagecontent %}
+  <div class="page-container {{page_class}}">
+    {% include "nav.njk" %}
+    <main>
+      {% block content %}{% endblock %}
+    </main>
+  </div>
 {% endblock %}
 
 {% block js %}
-<script src="/assets/js/nav.js"></script>
+  <script src="/assets/js/nav.js"></script>
 {% endblock %}

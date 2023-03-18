@@ -1,4 +1,4 @@
-const eleventySass = require("eleventy-sass");
+const fs = require("fs");
 const postcss = require("postcss");
 const path = require("path");
 
@@ -8,20 +8,27 @@ module.exports = function (eleventyConfig) {
     "src/assets/fonts": "assets/fonts",
     "src/assets/js": "assets/js",
     "src/assets/images": "assets/images",
-    "**/*.webmanifest": "",
+    "src/site.webmanifest": "",
   });
 
   // Render CSS inline
-  eleventyConfig.addPairedShortcode("postcss", async (code) => {
-    const filepath = path.join(__dirname, "src/assets/styles/main.scss");
+  eleventyConfig.addShortcode("postcss", async (filename) => {
+    const filepath = path.join("src/assets/styles", filename);
+    const css = await fs.promises.readFile(filepath);
+    console.log(filename);
     return await postcss([
       require("@csstools/postcss-sass"),
       require("postcss-import"),
       require("autoprefixer"),
       require("cssnano"),
     ])
-      .process(code, { from: filepath })
-      .then((result) => result.css);
+      .process(css, { from: filepath })
+      .then((result) => {
+        return result.css;
+      })
+      .catch((err) => {
+        console.error(err);
+      });
   });
 
   eleventyConfig.setServerOptions({
@@ -30,6 +37,13 @@ module.exports = function (eleventyConfig) {
       res.setHeader("Access-Control-Allow-Origin", "*");
       next();
     },
+  });
+
+  // Output to filename.html files instead of filename/index.html
+  // nginx handles loading /filename -> /filename.html
+  eleventyConfig.addGlobalData("permalink", () => {
+    return (data) =>
+      `${data.page.filePathStem}.${data.page.outputFileExtension}`;
   });
 
   return {
