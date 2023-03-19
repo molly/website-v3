@@ -45,6 +45,10 @@
     --link-text-hover-color: #bbbbbb;
     --note-text-color: #aaaaaa;
     --note-text-hover-color: #cccccc;
+
+    .bw-icon {
+      filter: invert(100%);
+    }
   }
 }
 
@@ -66,4 +70,8 @@
   --timestamp-color: #aaaaaa;
   --note-text-color: #aaaaaa;
   --note-text-hover-color: #cccccc;
+
+  .bw-icon {
+    filter: invert(100%);
+  }
 }
