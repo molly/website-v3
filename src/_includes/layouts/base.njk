@@ -7,7 +7,7 @@
 
     <title>{{ title }}</title>
 
-    <link rel="stylesheet" href="../assets/base-styles.css"/>
+    <link rel="stylesheet" href="../assets/styles/base-styles.css"/>
     <style>
       {% if pagecss %}
         {% postcss pagecss %}
@@ -38,7 +38,7 @@
     {% endif %}
     <meta property="og:locale" content="en_US"/>
     <meta property="og:type" content="website"/>
-    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:card" content="{{twitter_card_style | default('summary_large_image')}}"/>
     <meta name="twitter:creator" content="@mollyxfff"/>
     <meta name="twitter:creator:id" content="545445165"/>
     <meta property="og:url" content="https://www.mollywhite.net{{ path }}"/>
@@ -51,6 +51,8 @@
     <link rel="manifest" href="/site.webmanifest"/>
     <link rel="me" href="https://hachyderm.io/@molly0xfff"/>
     <meta name="theme-color" content="#161616"/>
+
+    {% block head %}{% endblock %}
   </head>
 
   <body>

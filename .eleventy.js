@@ -15,7 +15,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addShortcode("postcss", async (filename) => {
     const filepath = path.join("src/assets/styles", filename);
     const css = await fs.promises.readFile(filepath);
-    console.log(filename);
     return await postcss([
       require("@csstools/postcss-sass"),
       require("postcss-import"),

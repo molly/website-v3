@@ -1,0 +1,363 @@
+@import "_tokens.scss";
+
+@counter-style alpha-paren {
+  system: extends lower-alpha;
+  suffix: ") ";
+}
+
+* {
+  box-sizing: content-box;
+}
+html {
+  line-height: 1.15;
+}
+body {
+  font-size: 18px;
+  line-height: 1.5;
+}
+.review {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.review h2,
+.review h3,
+.review h4,
+.review h5 {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+.review a:hover {
+  background-color: transparent;
+  text-decoration: none;
+}
+.review .title-block {
+  margin: 0.625rem;
+  text-align: center;
+}
+.review .title-block .title-image {
+  max-width: 20rem;
+  margin: 0 auto;
+}
+.review .title-block .title-image img {
+  max-width: 100%;
+}
+.review .byline {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 80%;
+  max-width: 31.25rem;
+  margin: 0 auto;
+}
+.review .byline:not(:first-child) {
+  margin-top: 1rem;
+}
+.review .intro,
+.review .outro {
+  max-width: 50rem;
+  padding: 0 0.625rem;
+}
+.review .intro {
+  margin: 0 auto 1.875rem auto;
+}
+.review .outro {
+  margin: 1.25rem auto 0 auto;
+  padding-bottom: 3.125rem;
+}
+.review .group {
+  display: flex;
+  width: 100%;
+}
+.review .group.first {
+  border-top: 1px solid #ddd;
+}
+.review .group.first .left .content {
+  padding-top: 1.25rem;
+}
+.review .group.last {
+  border-bottom: 1px solid #ddd;
+}
+.review .group .left {
+  flex: 2;
+}
+.review .group .right {
+  flex: 3;
+}
+.review .group .left,
+.review .group .right {
+  display: flex;
+}
+.review .group .left .content,
+.review .group .right .content {
+  background-color: inherit;
+  box-shadow: none;
+  padding: 0 0 1rem 0;
+}
+.review .group .left .content.empty,
+.review .group .right .content.empty {
+  padding: 0;
+}
+.review .group .right {
+  background-color: #f0f0f0;
+}
+.review .group .right .content {
+  font-size: 90%;
+}
+.review .content h3,
+.review .content h4 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.review .content p {
+  margin-top: 0;
+  margin-block-start: 0;
+}
+.review .content p:last-child {
+  margin-bottom: 0;
+  margin-block-end: 0;
+}
+.review .content ul,
+.review .content ol {
+  margin: 0 0 1rem 0;
+  padding-inline-start: 1rem;
+}
+.review .content .in-text-image {
+  margin: 0;
+}
+.review .footnotes {
+  font-size: 80%;
+}
+.review mark {
+  background-color: var(--review-highlight-color-transparent);
+}
+.review mark:hover {
+  cursor: pointer;
+  background-color: var(--review-highlight-color);
+}
+.review mark.selected {
+  background-color: var(--review-highlight-color);
+}
+.review mark.image-mark {
+  background-color: transparent;
+}
+.review .diff-add mark,
+.review mark.diff-add {
+  background-color: var(--review-addition-color-highlighted);
+}
+.review .diff-add mark:hover,
+.review mark.diff-add:hover {
+  cursor: pointer;
+  background-color: var(--review-highlight-color);
+}
+.review mark[data-annotation-id]::after {
+  content: attr(data-annotation-id);
+  content: attr(data-annotation-id) / "";
+  display: inline-block;
+  position: relative;
+  border-radius: 50%;
+  border: 1px solid #000;
+  width: 0.625rem;
+  height: 0.625rem;
+  font-size: 0.625rem;
+  line-height: 0.625rem;
+  padding: 1px;
+  text-align: center;
+  margin-left: 0.1875rem;
+  margin-right: 0.125rem;
+  bottom: 0.125rem;
+}
+.review .content > .annotation,
+.review .content .content,
+.review .content .annotation-group {
+  margin-top: 0;
+}
+.review .diff-add {
+  background-color: var(--review-addition-color);
+}
+.review .annotation {
+  background-color: white;
+  padding: 0.625rem;
+  border: 1px solid #ddd;
+}
+.review .annotation:hover {
+  cursor: pointer;
+}
+.review .annotation[role="comment"][data-annotation-id]::after,
+.review .annotation-group[role="comment"][data-annotation-id]::after {
+  content: attr(data-annotation-id);
+  content: attr(data-annotation-id) / "";
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background-color: #fff;
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+  width: 0.875rem;
+  height: 0.875rem;
+  font-size: 0.875rem;
+  line-height: 0.75rem;
+  padding: 0.1875rem;
+  text-align: center;
+  left: -0.5rem;
+  top: -0.5rem;
+}
+.review .annotation[role="comment"],
+.review .annotation-group[role="comment"] {
+  position: relative;
+}
+.review .annotation-group .annotation:not(:first-child) {
+  border-top-width: 0;
+}
+.review .annotation.selected,
+.review .annotation-group.selected .annotation {
+  border-color: #999;
+  background-color: #fffeef;
+}
+.review .commenter {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 80%;
+  color: #999;
+}
+.review .no-margin {
+  margin: 0 !important;
+}
+.review .small {
+  font-size: 80%;
+}
+.review .fine-print {
+  font-size: 70%;
+  margin-top: 3rem;
+}
+.review .annotation-group .annotation.thread {
+  margin-left: 0.625rem;
+}
+.review .elide {
+  border-top: 1px dashed #ddd;
+  border-bottom: 1px dashed #ddd;
+  padding: 1rem 0;
+  margin: 1rem 0;
+  text-align: center;
+}
+.review .note {
+  color: #666;
+  font-style: italic;
+  font-size: 85%;
+}
+.review blockquote {
+  font-style: italic;
+}
+.review blockquote i {
+  font-style: normal;
+}
+.review ul.dashed {
+  list-style-type: "- ";
+}
+.review ol.alpha-paren {
+  list-style: alpha-paren;
+}
+.review .annotation-group .annotation.thread-2 {
+  margin-left: 1.25rem;
+}
+.review .annotation-group .annotation.thread-3 {
+  margin-left: 1.875rem;
+}
+.review .annotation-group .annotation.thread-4 {
+  margin-left: 2.5rem;
+}
+.review .annotation-group .annotation.thread-5 {
+  margin-left: 3.125rem;
+}
+.review .annotation-group .annotation.thread-6 {
+  margin-left: 3.75rem;
+}
+.review .annotation-group .annotation.thread-7 {
+  margin-left: 4.375rem;
+}
+.review .annotation-group .annotation.thread-8 {
+  margin-left: 5rem;
+}
+.review .annotation-group .annotation.thread-9 {
+  margin-left: 5.625rem;
+}
+.review .annotation-group .annotation.thread-10 {
+  margin-left: 6.25rem;
+}
+@media screen and (min-width: 1801px) {
+  .review .group .left .content {
+    padding-left: 20%;
+    padding-right: 2.5rem;
+  }
+  .review .group .right .content {
+    padding-left: 2.5rem;
+    padding-right: 20%;
+  }
+}
+@media screen and (min-width: 1001px) and (max-width: 1800px) {
+  .review .group .left .content,
+  .review .group .right .content {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
+@media screen and (min-width: 751px) {
+  .review .group .left .content,
+  .review .group .right .content {
+    max-width: 50rem;
+  }
+  .review .group .left .content {
+    float: right;
+  }
+  .review .group.first .right .content {
+    padding-top: 1.25rem;
+  }
+  .review .content > .annotation:not(:first-child),
+  .review .content .content:not(:first-child),
+  .review .content .annotation-group:not(:first-child) {
+    margin-top: 0.8rem;
+  }
+  .review .content > .annotation:last-child,
+  .review .content .content:last-child,
+  .review .content .annotation-group:last-child {
+    margin-bottom: 0.8rem;
+  }
+}
+@media screen and (max-width: 750px) {
+  .review .group {
+    flex-direction: column;
+  }
+  .review .group .left .content,
+  .review .group .right .content {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+  .review .group .left .content {
+    margin-top: 1rem;
+  }
+  .review .annotation {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 90%;
+  }
+  .review .content > .annotation,
+  .review .content > .annotation-group {
+    margin-top: 1rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .review .group .left .content,
+  .review .group .right .content {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+}
+
+.no-js.review mark:hover {
+  cursor: auto !important;
+  background-color: var(--review-highlight-color-transparent) !important;
+}
+.no-js.review .annotation:hover {
+  cursor: auto !important;
+}
+
+.latecomers-guide h3 {
+  text-transform: uppercase;
+}
+.latecomers-guide .content h3,
+.latecomers-guide .content h4 {
+  margin: 0 0 1.25rem 0;
+}
