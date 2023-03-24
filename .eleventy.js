@@ -38,13 +38,6 @@ module.exports = function (eleventyConfig) {
     },
   });
 
-  // Output to filename.html files instead of filename/index.html
-  // nginx handles loading /filename -> /filename.html
-  eleventyConfig.addGlobalData("permalink", () => {
-    return (data) =>
-      `${data.page.filePathStem}.${data.page.outputFileExtension}`;
-  });
-
   return {
     dir: {
       input: "src",
