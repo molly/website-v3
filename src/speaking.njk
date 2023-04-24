@@ -7,128 +7,199 @@ path: "/speaking"
 
 {% extends "layouts/with-nav.njk" %}
 {% block content %}
-  <h1>Speaking</h1>
+<h1 class="bottom-margin">Speaking</h1>
 
+<div class="index">
+  <h2>Index</h2>
+  <h3>Lectures</h3>
   <ul>
-    <li>"Popping the Web3 Bubble". South by Southwest, March 14, 2023.</li>
+    <li>"<a href="#digital-ethics">Blockchains and digital ethics</a>". Northeastern University, March 28, 2023.</li>
     <li>"<a href="#interrogating">Interrogating the Claims of Crypto: Decentralized, Immutable, Anonymous,
-      Transparent</a>". February 8, 2023.</li>
-    <li>"Crypto: Innovation and Disruption". Stanford University, January 24, 2023.</li>
-    <li>"Web3 – Current trends and political implications". Friedrich-Ebert-Stiftung, January 19, 2023.</li>
-    <li>Blockchain and crypto Q&A. Harvard University, November 15, 2022.</li>
-    <li>"<a href="#bullshit">Is web3 bullshit?</a>" Web Summit, November 4, 2022.</li>
-    <li>"<a href="#whats-next">The future of crypto: What's next for this craze?</a>" (panel). Web Summit, November 4,
-    2022.</li>
+        Transparent</a>". February 8, 2023.</li>
+    <li>"<a href="#innovation-disruption">Crypto: Innovation and Disruption</a>". Stanford University, January 24, 2023.
+    </li>
+    <li><a href="#harvard-qa">Blockchain and crypto Q&A</a>. Harvard University, November 15, 2022.</li>
     <li>"<a href="#solutionism">Blockchain solutionism</a>". University of Texas at Austin, September 21, 2022.</li>
-    <li>"<a href="#cryptopia">Crypotopia: Land of the promised vs. virtual</a>" (panel). Crypto Policy Symposium,
-    September 6,
-    2022.</li>
-    <li>"A Skeptical View of Current Cryptocurrency and Web3 Activities". New Hampshire Commission on Cryptocurrencies and
-    Digital Assets, August 3, 2022.</li>
     <li>"<a href="#abuse">Abuse on the blockchain</a>". Stanford University, March 7, 2022.</li>
   </ul>
+  <h3>Conferences</h3>
+  <ul>
+    <li>"<a href="#popping-bubble">Popping the Web3 Bubble</a>". South by Southwest, March 14, 2023.</li>
+    <li>"<a href="#bullshit">Is web3 bullshit?</a>" Web Summit, November 4, 2022.</li>
+    <li>"<a href="#whats-next">The future of crypto: What's next for this craze?</a>" (panel). Web Summit, November 4,
+    <li>"<a href="#cryptopia">Crypotopia: Land of the promised vs. virtual</a>" (panel). Crypto Policy Symposium,
+      September 6, 2022.</li>
+  </ul>
+  <h3>Government and policy</h3>
+  <ul>
+    <li>"Web3 – Current trends and political implications". Friedrich-Ebert-Stiftung, January 19, 2023.</li>
+    <li>Testimony at "<a href="#bundestag">Web 3.0 and the Metaverse</a>". German Bundestag, December 14, 2023.</li>
+    2022.</li>
+    <li>"A Skeptical View of Current Cryptocurrency and Web3 Activities". New Hampshire Commission on Cryptocurrencies
+      and
+      Digital Assets, August 3, 2022.</li>
+  </ul>
+</div>
 
-  <hr/>
 
-  <h2 class="h3">"Popping the Web3 Bubble"</h2>
+<h2 class="bottom-margin">By date</h2>
+<section>
+  <h3><a id="digital-ethics">"Blockchains and digital ethics"</a></h3>
+  <div class="subtitle">Northeastern University. PHIL 1145: Technology and Human Values.</div>
+  <div class="timestamp">
+    <time datetime="2023-03-28">March 28, 2023</time>
+  </div>
+</section>
+
+<section>
+  <h3><a id="popping-bubble">Popping the Web3 Bubble"</a></h3>
   <div class="subtitle">South by Southwest 2023</div>
+  <div class="links"><a href="https://www.youtube.com/watch?v=Y7YAXUWG820">Video</a></div>
   <div class="timestamp">
     <time datetime="2023-03-14">March 14, 2023</time>
   </div>
+  <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Y7YAXUWG820" title="YouTube video player"
+    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
+web-share" allowfullscreen></iframe>
+</section>
 
-  <h2 class="h3">
-    <a id="interrogating">"Interrogating the Claims of Crypto: Decentralized, Immutable, Anonymous,
-    Transparent"</a>
-  </h2>
-  <div class="subtitle">For a group of policy and regulatory officials</div>
+<section>
+  <h3>
+    <a id="interrogating">"Interrogating the Claims of Crypto: Decentralized, Immutable, Anonymous, Transparent"</a>
+  </h3>
+  <div class="subtitle">For a group of policy and regulatory officials.</div>
+  <div class="links"><a href="https://www.youtube.com/watch?v=ycz_Pz5k6Dk">Video</a>.</div>
   <div class="timestamp">
     <time datetime="2023-02-08">February 8, 2023</time>
   </div>
   <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/ycz_Pz5k6Dk" title="YouTube video player"
-  frameborder="0"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-  allowfullscreen></iframe>
+    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
+web-share" allowfullscreen></iframe>
+</section>
 
-  <h2 class="h3">"Crypto: Innovation and Disruption"</h2>
+<section>
+  <h3><a href="innovation-disruption">"Crypto: Innovation and Disruption"</a></h3>
   <div class="subtitle">Stanford University. GSBGEN 538: Power in Finance.</div>
   <div class="timestamp">
     <time datetime="2023-01-24">January 24, 2023</time>
   </div>
+</section>
 
-  <h2 class="h3">"Web3 – Current trends and political implications"</h2>
+<section>
+  <h3>"Web3 – Current trends and political implications"</h3>
   <div class="subtitle">Friedrich-Ebert-Stiftung Expert Roundtable on Digital Policy.</div>
   <div class="timestamp">
     <time datetime="2023-01-15">January 19, 2023</time>
   </div>
+</section>
 
-  <h2 class="h3">Blockchain and crypto Q&A</h2>
+<section>
+  <h3>Testimony at "<a id="bundestag">Web 3.0 and the Metaverse</a>"</h3>
+  <div class="subtitle">German Bundestag.</div>
+  <div class="links"><a href="https://www.bundestag.de/ausschuesse/a23_digitales/Anhoerungen/921548-921548">Hearing
+      information</a>, <a
+      href="https://www.bundestag.de/resource/blob/926182/c5d7edf957872ea3b724ad0a7341e3c8/Stellungnahme-White-data.pdf">written
+      testimony</a>.</div>
+  <div class="timestamp"><time datetime="2022-12-08">December 8, 2022</time></div>
+</section>
+
+<section>
+  <h3>Blockchain and crypto Q&amp;A</h3>
   <div class="subtitle">Harvard University. IGA-237M: Future Issues in Cyber-Security Policy</div>
   <div class="timestamp">
     <time datetime="2022-11-15">November 15, 2022</time>
   </div>
+</section>
 
-  <h2 class="h3">
+<section>
+  <h3>
     <a id="bullshit">"Is web3 bullshit?"</a>
-  </h2>
+  </h3>
   <div class="subtitle">Web Summit 2022</div>
+  <div class="links"><a href="https://www.youtube.com/watch?v=AGsllEF7w_g">Video</a>, <a
+      href="https://blog.mollywhite.net/is-web3-bullshit/">transcript</a>.</div>
   <div class="timestamp">
     <time datetime="2022-11-04">November 4, 2022</time>
   </div>
   <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/AGsllEF7w_g" title="YouTube video player"
-  frameborder="0"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-  allowfullscreen></iframe>
+    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
+web-share" allowfullscreen></iframe>
+</section>
 
-  <h2 class="h3">
-    <a id="whats-next">"The future of crypto: What's next for this craze?"</a> (panel)</h2>
-  <div class="subtitle">Web Summit 2022</div>
+<section>
+  <h3>
+    <a id="whats-next">"The future of crypto: What's next for this craze?"</a> (panel)
+  </h3>
+  <div class="subtitle">Web Summit 2022.</div>
+  <div class="links"><a href="https://www.youtube.com/watch?v=D5p2gt7htDM&t=998s">Video</a>.</div>
   <div class="timestamp">
     <time datetime="2022-11-04">November 4, 2022</time>
   </div>
-  <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/D5p2gt7htDM?start=998"
-  title="YouTube video player" frameborder="0"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-  allowfullscreen></iframe>
+  <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/D5p2gt7htDM?start=998" title="YouTube video
+player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
+web-share" allowfullscreen></iframe>
+</section>
 
-  <h2 class="h3">
+<section>
+  <h3>
     <a id="solutionism">"Blockchain solutionism"</a>
-  </h2>
-  <div class="subtitle">University of Texas at Austin</div>
+  </h3>
+  <div class="subtitle">University of Texas at Austin.</div>
+  <div class="links"><a href="https://www.youtube.com/watch?v=G0k_GjxuJDM">Video</a>, <a
+      href="https://blog.mollywhite.net/blockchain-solutionism-lecture/">transcript</a>, <a
+      href="https://docs.google.com/presentation/d/1Z-1IueseKmNClsHFDPqDYONTGCpYg6DiC6Ow1WXe5Ik/edit?usp=sharing">slides</a>.
+  </div>
   <div class="timestamp">
     <time datetime="2022-09-21">September 21, 2022</time>
   </div>
   <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/G0k_GjxuJDM" title="YouTube video player"
-  frameborder="0"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-  allowfullscreen></iframe>
+    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
+  web-share" allowfullscreen></iframe>
+</section>
 
-  <h2 class="h3">
-    <a id="cryptopia">"Crypotopia: Land of the promised vs. virtual"</a> (panel)</h2>
-  <div class="subtitle">Crypto Policy Symposium</div>
+<section>
+  <h3>
+    <a id="cryptopia">"Crypotopia: Land of the promised vs. virtual"</a> (panel)
+  </h3>
+  <div class="subtitle">Crypto Policy Symposium.</div>
+  <div class="links"><a href="https://www.youtube.com/watch?v=ElVHeL3WiI4">Video</a>.</div>
   <div class="timestamp">
     <time datetime="2022-09-06">September 6, 2022</time>
   </div>
   <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/ElVHeL3WiI4" title="YouTube video player"
-  frameborder="0"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-  allowfullscreen></iframe>
+    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
+  web-share" allowfullscreen></iframe>
+</section>
 
-  <h2 class="h3">"A Skeptical View of Current Cryptocurrency and Web3 Activities"</h2>
-  <div class="subtitle">New Hampshire Commission on Cryptocurrencies and Digital Assets</div>
+<section>
+  <h3>"A Skeptical View of Current Cryptocurrency and Web3 Activities"</h3>
+  <div class="subtitle">New Hampshire Commission on Cryptocurrencies and Digital Assets.</div>
+  <div class="links"><a
+      href="https://www.governor.nh.gov/sites/g/files/ehbemt336/files/inline-documents/sonh/cryptocurrencie-report.pdf">Final
+      report</a> by the Commission.</div>
   <div class="timestamp">
     <time datetime="2022-08-03">August 3, 2022</time>
   </div>
+</section>
 
-  <h2 class="h3">
+<section>
+  <h3>
     <a id="abuse">"Abuse on the blockchain"</a>
-  </h2>
+  </h3>
   <div class="subtitle">Stanford University. POLISCI 243C: The Politics of Internet Abuse and CS 152: Trust and Safety
-  Engineering</div>
+    Engineering.
+  </div>
+  <div class="links">
+    <a href="https://www.youtube.com/watch?v=hXBZ-BXfCSY">Video</a>,
+    <a
+      href="https://docs.google.com/presentation/d/1AlJB7xTyHSpt1-2OnAhnpR7bmSddOwxhwjQLuklAD-8/edit?usp=sharing">slides</a>,
+    <a href="https://blog.mollywhite.net/abuse-on-the-blockchain-lecture/">transcript</a>.
+  </div>
   <div class="timestamp">
     <time datetime="2022-03-07">March 7, 2022.</time>
   </div>
   <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/hXBZ-BXfCSY" title="YouTube video player"
-  frameborder="0"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-  allowfullscreen></iframe>
+    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
+  web-share" allowfullscreen></iframe>
+</section>
 {% endblock %}
