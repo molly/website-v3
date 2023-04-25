@@ -7,11 +7,12 @@ path: "/linktree"
 
 {% extends "layouts/blank-perma-imports.njk" %}
 
-{% block content %}
-  {% include "linktree.njk" %}
+{% block head %}
+  <link rel="stylesheet" href="https://www.mollywhite.net/assets/fonts/fontawesome-free/css/fontawesome.css"/>
+  <link rel="stylesheet" href="https://www.mollywhite.net/assets/fonts/fontawesome-free/css/brands.css"/>
+  <link rel="stylesheet" href="https://www.mollywhite.net/assets/fonts/fontawesome-free/css/solid.css"/>
 {% endblock %}
 
-{% block js %}
-  {{super()}}
-  <script src="https://kit.fontawesome.com/de718e8b04.js" crossorigin="anonymous"></script>
+{% block content %}
+  {% include "linktree.njk" %}
 {% endblock %}
