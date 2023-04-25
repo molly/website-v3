@@ -27,6 +27,7 @@
     "cssnano": "^5.1.14",
     "eleventy-sass": "^2.1.7",
     "fs": "^0.0.1-security",
+    "lodash.sortby": "^4.7.0",
     "postcss": "^8.4.21",
     "postcss-import": "^15.1.0",
     "rimraf": "^4.1.2",

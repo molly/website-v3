@@ -1,0 +1,19 @@
+{% macro socialLink(link) %}
+  <li>
+    {% if link.custom %}
+      {{ link.custom | safe }}
+    {% else %}
+      {{link.label}}: 
+      {% if link.href %}
+        <a href="{{link.href}}">{{link.username}}</a>
+      {% else %}
+        {{link.username}}
+      {% endif %}
+      {% if link.private %}
+        <sup>
+          <a href="#footnote1">[1]</a>
+        </sup>
+      {% endif %}
+    {% endif %}
+  </li>
+{% endmacro %}
