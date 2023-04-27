@@ -3,7 +3,7 @@ const sortBy = require("lodash.sortby");
 const data = [
   {
     label: "Bluesky",
-    href: null,
+    href: "https://bsky.app/profile/molly.wiki",
     username: "molly.wiki",
   },
   {
