@@ -66,13 +66,13 @@ body {
   width: 100%;
 }
 .review .group.first {
-  border-top: 1px solid #ddd;
+  border-top: 1px solid var(--hr-color);
 }
 .review .group.first .left .content {
   padding-top: 1.25rem;
 }
 .review .group.last {
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid var(--hr-color);
 }
 .review .group .left {
   flex: 2;
@@ -124,7 +124,8 @@ body {
   font-size: 80%;
 }
 .review mark {
-  background-color: var(--review-highlight-color-transparent);
+  color: var(--main-text-color);
+  background-color: var(--review-highlight-color-deselected);
 }
 .review mark:hover {
   cursor: pointer;
@@ -151,7 +152,7 @@ body {
   display: inline-block;
   position: relative;
   border-radius: 50%;
-  border: 1px solid #000;
+  border: 1px solid var(--main-text-color);
   width: 0.625rem;
   height: 0.625rem;
   font-size: 0.625rem;
@@ -206,13 +207,13 @@ body {
 }
 .review .annotation.selected,
 .review .annotation-group.selected .annotation {
-  border-color: #999;
+  border-color: var(--review-annotation-selected-border-color);
   background-color: var(--review-annotation-selected-background-color);
 }
 .review .commenter {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 80%;
-  color: #999;
+  color: var(--review-commenter-text-color);
 }
 .review .no-margin {
   margin: 0 !important;
@@ -228,14 +229,14 @@ body {
   margin-left: 0.625rem;
 }
 .review .elide {
-  border-top: 1px dashed #ddd;
-  border-bottom: 1px dashed #ddd;
+  border-top: 1px dashed var(--hr-color);
+  border-bottom: 1px dashed var(--hr-color);
   padding: 1rem 0;
   margin: 1rem 0;
   text-align: center;
 }
 .review .note {
-  color: #666;
+  color: var(--review-note-text-color);
   font-style: italic;
   font-size: 85%;
 }
@@ -348,7 +349,7 @@ body {
 
 .no-js.review mark:hover {
   cursor: auto !important;
-  background-color: var(--review-highlight-color-transparent) !important;
+  background-color: var(--review-highlight-color-deselected) !important;
 }
 .no-js.review .annotation:hover {
   cursor: auto !important;
