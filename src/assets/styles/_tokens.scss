@@ -23,6 +23,8 @@
   --review-highlight-color-transparent: #fff58980;
   --review-addition-color: #e4ffe0;
   --review-addition-color-highlighted: #ebffb8;
+  --review-annotation-section-background-color: #f0f0f0;
+  --review-annotation-selected-background-color: #fffeef;
 
   --serif-fonts: "SourceSerif", "Times New Roman", serif;
   --sans-serif-fonts: "SansSerif", "Helvetica", sans-serif;
@@ -45,6 +47,9 @@
     --link-text-hover-color: #bbbbbb;
     --note-text-color: #aaaaaa;
     --note-text-hover-color: #cccccc;
+
+    --review-annotation-section-background-color: #222222;
+    --review-annotation-selected-background-color: #444444;
 
     .bw-icon {
       filter: invert(100%);

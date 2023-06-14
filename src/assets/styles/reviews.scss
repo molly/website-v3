@@ -95,7 +95,7 @@ body {
   padding: 0;
 }
 .review .group .right {
-  background-color: #f0f0f0;
+  background-color: var(--review-annotation-section-background-color);
 }
 .review .group .right .content {
   font-size: 90%;
@@ -171,9 +171,9 @@ body {
   background-color: var(--review-addition-color);
 }
 .review .annotation {
-  background-color: white;
+  background-color: var(--bg-color);
   padding: 0.625rem;
-  border: 1px solid #ddd;
+  border: 1px solid var(--hr-color);
 }
 .review .annotation:hover {
   cursor: pointer;
@@ -183,11 +183,11 @@ body {
   content: attr(data-annotation-id);
   content: attr(data-annotation-id) / "";
   font-family: Georgia, "Times New Roman", Times, serif;
-  background-color: #fff;
+  background-color: var(--bg-color);
   display: inline-block;
   position: absolute;
   border-radius: 50%;
-  border: 1px solid #ddd;
+  border: 1px solid var(--hr-color);
   width: 0.875rem;
   height: 0.875rem;
   font-size: 0.875rem;
@@ -207,7 +207,7 @@ body {
 .review .annotation.selected,
 .review .annotation-group.selected .annotation {
   border-color: #999;
-  background-color: #fffeef;
+  background-color: var(--review-annotation-selected-background-color);
 }
 .review .commenter {
   font-family: Arial, Helvetica, sans-serif;
