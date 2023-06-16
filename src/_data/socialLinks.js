@@ -9,7 +9,7 @@ const data = [
   {
     label: "Discord",
     href: "https://discord.com/users/298979974029901827",
-    username: "molly#9677",
+    username: "molly0xfff",
   },
   {
     label: "Github",
