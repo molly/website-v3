@@ -36,6 +36,11 @@ const verifyLinks = [
   },
   { label: "Wikipediocracy", username: "GorillaWarfare" },
   { label: "Wire", username: "molly0xfff" },
+  {
+    label: "YouTube",
+    href: "https://www.youtube.com/@molly0xfff",
+    username: "molly0xfff",
+  },
 ];
 
 module.exports = sortBy([...socialLinks, ...verifyLinks], "label");
