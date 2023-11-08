@@ -26,8 +26,8 @@ const verifyLinks = [
   },
   {
     label: "Substack",
-    href: "https://substack.com/profile/6775195-molly-white",
-    username: "6775195-molly-white",
+    href: "https://substack.com/@mollywhite",
+    username: "mollywhite",
   },
   {
     label: "Wikipedia",
@@ -36,11 +36,6 @@ const verifyLinks = [
   },
   { label: "Wikipediocracy", username: "GorillaWarfare" },
   { label: "Wire", username: "molly0xfff" },
-  {
-    label: "YouTube",
-    href: "https://www.youtube.com/@molly0xfff",
-    username: "molly0xfff",
-  },
 ];
 
 module.exports = sortBy([...socialLinks, ...verifyLinks], "label");

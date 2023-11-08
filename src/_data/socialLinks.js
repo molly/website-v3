@@ -12,11 +12,6 @@ const data = [
     username: "molly0xfff",
   },
   {
-    label: "Github",
-    href: "https://github.com/molly",
-    username: "molly",
-  },
-  {
     label: "LinkedIn",
     href: "https://www.linkedin.com/in/mollyawhite/",
     username: "mollyawhite",
@@ -39,6 +34,11 @@ const data = [
   {
     label: "Twitter",
     href: "https://twitter.com/molly0xFFF",
+    username: "molly0xfff",
+  },
+  {
+    label: "YouTube",
+    href: "https://www.youtube.com/@molly0xfff",
     username: "molly0xfff",
   },
 ];
