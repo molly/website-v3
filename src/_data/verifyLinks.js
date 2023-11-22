@@ -8,7 +8,6 @@ const verifyLinks = [
     username: "molly0x57",
     href: "https://news.ycombinator.com/user?id=molly0x57",
   },
-  { label: "Instagram", username: "molly0xfff", private: true },
   {
     label: "IRC",
     custom:
