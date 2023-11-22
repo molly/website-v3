@@ -7,29 +7,22 @@ path: "/social"
 
 {% extends "layouts/with-nav.njk" %}
 {% block content %}
-  <h1>Social media</h1>
-  <ul>
-    {% import "socialMacro.njk" as socialMacro %}
-    {% for link in socialLinks %}
-      {{socialMacro.socialLink(link)}}
-    {% endfor %}
-  </ul>
-  <h2>
-    <i>Web3 is Going Just Great</i>
-  </h2>
-  <p>
-    <i>Web3 is Going Just Great</i> also has social media feeds:
+<h1>Social media</h1>
+<ul>
+  {% import "socialMacro.njk" as socialMacro %}
+  {% for link in socialLinks %}
+  {{socialMacro.socialLink(link)}}
+  {% endfor %}
+</ul>
+<h2 id="w3igg">
+  <i>Web3 is Going Just Great</i>
+</h2>
+<p>
+  <i>Web3 is Going Just Great</i> also has social media feeds:
 </p>
-  <ul>
-    <li>Twitter: <a href="https://twitter.com/web3isgreat">web3isgreat</a>
-    </li>
-    <li>Mastodon: <a href="https://indieweb.social/@web3isgreat">@web3isgreat@indieweb.social</a>
-    </li>
-    <li>Bluesky: <a href="https://bsky.app/profile/did:plc:ugyl6syayvsrvu5w4uxtlkz4">@web3isgoinggreat.com</a>
-    </li>
-    <li>Instagram: <a href="https://www.instagram.com/web3isgoinggreat/">@web3isgoinggreat</a>
-    </li>
-    <li>Threads: <a href="https://www.threads.net/@web3isgoinggreat">@web3isgoinggreat</a>
-    </li>
-  </ul>
+<ul>
+  {% for link in w3iggSocialLinks %}
+  {{socialMacro.socialLink(link)}}
+  {% endfor %}
+</ul>
 {% endblock %}
