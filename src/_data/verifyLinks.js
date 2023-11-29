@@ -2,7 +2,6 @@ const sortBy = require("lodash.sortby");
 const socialLinks = require("./socialLinks");
 
 const verifyLinks = [
-  { label: "Facebook", username: "molly0xfff", private: true },
   {
     label: "Hacker News",
     username: "molly0x57",

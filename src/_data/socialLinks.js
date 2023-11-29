@@ -27,6 +27,11 @@ const data = [
     username: "watchfulprotector",
   },
   {
+    label: "TikTok",
+    href: "https://www.tiktok.com/@molly0xfff",
+    username: "molly0xfff",
+  },
+  {
     label: "Twitch",
     href: "https://twitch.tv/molly0xFFF",
     username: "molly0xfff",

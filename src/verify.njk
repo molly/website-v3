@@ -7,29 +7,36 @@ path: "/verify"
 
 {% extends "layouts/with-nav.njk" %}
 {% block content %}
-  <h1>Verify</h1>
-  <p>This page serves as the system of record for my online identity. I control the following personal accounts:</p>
-  <ul>
-    {% import "socialMacro.njk" as socialMacro %}
-    {% for link in verifyLinks %}
-      {{socialMacro.socialLink(link)}}
-    {% endfor %}
-  </ul>
-  <p>I also own and control the domains mollywhite.net, molly.wiki, and molly.computer.</p>
-  <h2>
-    <i>Web3 is Going Great</i>
-  </h2>
-  <p>For my <i>Web3 is Going Great</i> project:</p>
-  {% for link in w3iggSocialLinks %}
-    {{socialMacro.socialLink(link)}}
+<h1>Verify</h1>
+<p>This page serves as the system of record for my online identity. I control the following personal accounts:</p>
+<ul>
+  {% import "socialMacro.njk" as socialMacro %}
+  {% for link in verifyLinks %}
+  {{socialMacro.socialLink(link)}}
   {% endfor %}
-  <p>I own and control the domains web3isgoinggreat.com (primary) and the redirects web3isgoingjustgreat.com,
+</ul>
+<p>I also own and control the domains mollywhite.net, molly.wiki, and molly.computer. My usual email addresses are
+  molly@mollywhite.net and molly.white5@gmail.com.<sup><a href="#footnote1">1</a></sup> I also use
+  gorillawarfarewikipedia@gmail.com for Wikimedia-related
+  matters.</p>
+<p>If there's an account claiming to be me that's not on this list, it's probably an impersonator. If it's trying to
+  give you tips on crypto trading, it's <a
+    href="https://www.dlnews.com/articles/defi/twitters-impersonation-problem-is-about-more-than-just-crypto-scams/"
+    target="_blank"><i>definitely</i> an impersonator</a>.</p>
+<h2>
+  <i>Web3 is Going Great</i>
+</h2>
+<p>For my <i>Web3 is Going Great</i> project:</p>
+{% for link in w3iggSocialLinks %}
+{{socialMacro.socialLink(link)}}
+{% endfor %}
+<p>I own and control the domains web3isgoinggreat.com (primary) and the redirects web3isgoingjustgreat.com,
   web3isgreat.com, and w3igg.com.</p>
-  <hr/>
-  <p>
-    <sup>
-      <a id="#footnote1">[1]</a>
-    </sup> These are private accounts, and I don't accept friend/follow requests from
-  people I don't know personally. If you want to follow me on social media, feel free any of the public accounts here.
+<hr />
+<p>
+  <sup>
+    <a id="#footnote1">[1]</a>
+  </sup> These go to the same inbox, so please don't email both hoping for a quicker
+  reply.
 </p>
 {% endblock %}
