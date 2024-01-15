@@ -313,6 +313,14 @@ hr {
   }
 }
 
+// ATTRIBUTION
+.attribution {
+  h1,
+  h2 {
+    margin-bottom: 1rem;
+  }
+}
+
 // RESPONSIVE
 @media screen and (max-width: 1024px) {
   .projects {
