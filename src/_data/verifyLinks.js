@@ -3,6 +3,11 @@ const socialLinks = require("./socialLinks");
 
 const verifyLinks = [
   {
+    label: "Github",
+    username: "molly",
+    href: "https://github.com/molly",
+  },
+  {
     label: "Hacker News",
     username: "molly0x57",
     href: "https://news.ycombinator.com/user?id=molly0x57",
@@ -23,17 +28,11 @@ const verifyLinks = [
     username: "mollywhite",
   },
   {
-    label: "Substack",
-    href: "https://substack.com/@mollywhite",
-    username: "mollywhite",
-  },
-  {
     label: "Wikipedia",
     href: "https://en.wikipedia.org/wiki/User:GorillaWarfare",
     username: "GorillaWarfare",
   },
   { label: "Wikipediocracy", username: "GorillaWarfare" },
-  { label: "Wire", username: "molly0xfff" },
 ];
 
 module.exports = sortBy([...socialLinks, ...verifyLinks], "label");
