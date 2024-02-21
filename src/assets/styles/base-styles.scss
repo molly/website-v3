@@ -66,17 +66,27 @@ h5,
 
 a {
   color: var(--main-text-color);
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 3px;
+  text-decoration: none;
+  background-image: var(--image-underline-black);
+  background-repeat: repeat-x;
+  background-position: 0 calc(100% - 0.15em);
+  /* Mimic text-decoration-skip */
+  text-shadow: 0 0.05em var(--bg-color), 0.05em 0.05em var(--bg-color),
+    -0.05em 0.05em var(--bg-color), 0.1em 0.05em var(--bg-color),
+    -0.1em 0.05em var(--bg-color), 0.1em 0 var(--bg-color),
+    -0.1em 0 var(--bg-color), 0em -0.05em var(--bg-color),
+    0em -0.075em var(--bg-color), -0.125em 0 var(--bg-color),
+    0.125em 0 var(--bg-color);
 
   &:hover {
     color: var(--link-text-hover-color);
+    background-image: var(--image-underline-hover-black);
   }
 
   // Anchors
   &:not([href]) {
     text-decoration: none;
+    background: none;
 
     &:hover {
       color: var(--main-text-color);
@@ -304,7 +314,7 @@ hr {
         width: 100%;
 
         a {
-          text-decoration: none;
+          background: none;
           padding: 0 0.625rem;
           font-size: 120%;
         }
