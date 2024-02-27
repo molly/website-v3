@@ -1,7 +1,8 @@
 nav {
   display: flex;
   flex-direction: column;
-  max-width: 20rem;
+  flex-shrink: 0;
+  width: 20rem;
   padding: 0 4rem 0 2rem;
   font-size: 1rem;
   line-height: 1rem;
