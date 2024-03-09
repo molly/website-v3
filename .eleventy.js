@@ -31,6 +31,11 @@ module.exports = function (eleventyConfig) {
       });
   });
 
+  eleventyConfig.setNunjucksEnvironmentOptions({
+    trimBlocks: true,
+    lstripBlocks: true,
+  });
+
   eleventyConfig.setServerOptions({
     module: "@11ty/eleventy-server-browsersync",
     middleware: function (req, res, next) {
