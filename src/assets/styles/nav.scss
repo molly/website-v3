@@ -52,7 +52,7 @@ nav {
   .menu-toggle {
     display: none;
     padding: 0.5rem;
-    margin: 1rem 0;
+    margin-top: 1rem;
     border: 1px solid var(--main-text-color);
     background-color: var(--bg-color);
     align-self: center;
@@ -76,13 +76,36 @@ nav {
 
     .menu-toggle {
       display: block;
+      width: 90%;
     }
 
     .nav-links {
       text-align: center;
+      width: 90%;
+      padding: 0 1rem;
+      border: 1px solid var(--main-text-color);
 
       &.collapsed {
         display: none;
+      }
+
+      ul {
+        padding: 0.5rem 0;
+      }
+
+      li:not(.nav-header) {
+        display: inline;
+        padding: 0.25rem 0rem;
+        line-height: 1.25rem;
+      }
+
+      li:not(.nav-header):not(:last-child) {
+        margin-right: 0.25rem;
+      }
+
+      li:not(.nav-header):not(:last-child)::after {
+        content: "•";
+        margin-left: 0.25rem;
       }
     }
   }
