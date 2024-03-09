@@ -2,7 +2,7 @@
 title: "FTX Contagion"
 description: "Charting the FTX collapse."
 page_class: "ftx-contagion"
-image: "https://mollywhite.net/storage/ftx-contagion-social.webp"
+image: "https://www.mollywhite.net/storage/ftx-contagion-social.webp"
 image_description: "A chart showing the contagion between the FTX collapse and other crypto platforms and projects"
 image_width: 1050
 image_height: 700
@@ -12,35 +12,35 @@ path: "/etc/ftx-contagion"
 {% extends "layouts/blank.njk" %}
 {% set pagecss = "ftx-contagion.scss" %}
 {% block content %}
-  <div class="content-box">
-    {% include "mini-nav.njk" %}
-    <div class="header">
-      <h2>FTX Contagion</h2>
-      <p class="small" id="last-updated">Last updated <a
+<div class="content-box">
+  {% include "mini-nav.njk" %}
+  <div class="header">
+    <h2>FTX Contagion</h2>
+    <p class="small" id="last-updated">Last updated <a
         href="https://github.com/molly/ftx-contagion/commit/123df58bff38b26e45d6e427d443c4769d3a23d1"
         target="_blank">March 5, 2023</a>.</p>
-      <p>Am I missing something?&nbsp;<a
+    <p>Am I missing something?&nbsp;<a
         href="https://github.com/molly/ftx-contagion/issues/new?assignees=&amp;labels=new&amp;template=new.yml&amp;title=%5BNEW%5D%3A+"
         target="_blank">Suggest an addition.</a>
-      </p>
-      <p>This data is also available in spreadsheet format at&nbsp;<a
+    </p>
+    <p>This data is also available in spreadsheet format at&nbsp;<a
         href="https://docs.google.com/spreadsheets/d/1j5oS6TId3xkO_63olPijRob6ZD_tRk7sjyV_5rkDrNw/edit?usp=sharing"
         target="_blank">Google Sheets</a>, or as&nbsp;<a href="https://github.com/molly/ftx-contagion/tree/main/data"
         target="_blank">CSVs</a>.</p>
-    </div>
-    <div class="graphics-wrapper">
-      <div class="legend"><img src="https://www.mollywhite.net/storage/ftx-legend.svg"
+  </div>
+  <div class="graphics-wrapper">
+    <div class="legend"><img src="https://www.mollywhite.net/storage/ftx-legend.svg"
         alt="Color key. Red: collapse. Orange: withdrawal pause. Yellow: other. Icon key. Lock: Funds locked in FTX.">
-      </div>
-      <div class="contagion">
-        <object data="https://www.mollywhite.net/storage/ftx-contagion.svg" type="image/svg+xml"
+    </div>
+    <div class="contagion">
+      <object data="https://www.mollywhite.net/storage/ftx-contagion.svg" type="image/svg+xml"
         aria-label="Diagram of the contagion between the FTX collapse and other crypto platforms and projects"></object>
-      </div>
     </div>
   </div>
+</div>
 {% endblock %}
 
 {% block js %}
-  {{super()}}
-  <script src="/js/contagion.js"></script>
+{{super()}}
+<script src="/js/contagion.js"></script>
 {% endblock %}
