@@ -94,8 +94,8 @@ nav {
       }
 
       li:not(.nav-header) {
-        display: inline;
-        padding: 0.25rem 0rem;
+        display: inline-block;
+        padding: 0rem;
         line-height: 1.25rem;
       }
 
