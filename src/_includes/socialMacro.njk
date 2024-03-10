@@ -5,7 +5,7 @@
     {% else %}
       {{link.label}}: 
       {% if link.href %}
-        <a href="{{link.href}}">{{link.username}}</a>
+        <a href="{{link.href}}" class="u-url">{{link.username}}</a>
       {% else %}
         {{link.username}}
       {% endif %}
