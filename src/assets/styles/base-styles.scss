@@ -3,6 +3,13 @@
 @import "_tokens.scss";
 @import "nav.scss";
 
+@mixin text-shadow($color) {
+  /* Mimic text-decoration-skip */
+  text-shadow: 0 0.05em $color, 0.05em 0.05em $color, -0.05em 0.05em $color,
+    0.1em 0.05em $color, -0.1em 0.05em $color, 0.1em 0 $color, -0.1em 0 $color,
+    0em -0.05em $color, 0em -0.075em $color, -0.125em 0 $color, 0.125em 0 $color;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -71,13 +78,7 @@ a {
   background-image: var(--image-underline-black);
   background-repeat: repeat-x;
   background-position: 0 calc(100% - 0.15em);
-  /* Mimic text-decoration-skip */
-  text-shadow: 0 0.05em var(--bg-color), 0.05em 0.05em var(--bg-color),
-    -0.05em 0.05em var(--bg-color), 0.1em 0.05em var(--bg-color),
-    -0.1em 0.05em var(--bg-color), 0.1em 0 var(--bg-color),
-    -0.1em 0 var(--bg-color), 0em -0.05em var(--bg-color),
-    0em -0.075em var(--bg-color), -0.125em 0 var(--bg-color),
-    0.125em 0 var(--bg-color);
+  @include text-shadow(var(--bg-color));
 
   &:hover {
     color: var(--link-text-hover-color);
@@ -210,6 +211,9 @@ hr {
     border: 1px solid var(--main-text-color);
     padding: 1.5rem;
     margin-bottom: 3rem;
+    a {
+      @include text-shadow(var(--note-background-color));
+    }
   }
 
   section {
