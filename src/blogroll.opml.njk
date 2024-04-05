@@ -1,0 +1,18 @@
+---
+permalink: /blogroll.opml.xml
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="1.0">
+
+  <head>
+    <title>Feeds for Molly White's blogroll</title>
+    <dateCreated>{{ page.date | dateToRfc822 }}</dateCreated>
+  </head>
+
+  <body>
+    {% for site in blogroll %}
+    <outline text="{{ site.text if site.text else site.author }}" title="{{ site.text if site.text else site.author }}"
+      type="rss" xmlUrl="{{ site.xmlUrl }}" htmlUrl="{{ site.htmlUrl }}" />
+    {% endfor %}
+  </body>
+</opml>

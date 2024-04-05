@@ -1,9 +1,11 @@
 const fs = require("fs");
 const postcss = require("postcss");
 const path = require("path");
+const pluginRss = require("@11ty/eleventy-plugin-rss");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.ignores.add("README.md");
+  eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPassthroughCopy({
     "src/assets/fonts": "assets/fonts",
     "src/assets/js": "assets/js",

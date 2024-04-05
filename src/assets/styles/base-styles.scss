@@ -275,6 +275,32 @@ hr {
   }
 }
 
+// BLOGROLL
+.blogroll {
+  ul.blog-list {
+    width: 100%;
+    max-width: 35em;
+    list-style: none;
+    padding: 0;
+
+    li {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  .blog-tag {
+    color: var(--note-text-color);
+    font-size: 80%;
+    font-style: italic;
+
+    &:before {
+      content: "#";
+    }
+  }
+}
+
 // LINKTREE
 .linktree {
   display: flex;
