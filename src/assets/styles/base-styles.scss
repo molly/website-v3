@@ -290,13 +290,17 @@ hr {
     }
   }
 
-  .blog-tag {
-    color: var(--note-text-color);
-    font-size: 80%;
-    font-style: italic;
+  .blog-tags {
+    text-align: right;
 
-    &:before {
-      content: "#";
+    .blog-tag {
+      color: var(--note-text-color);
+      font-size: 80%;
+      font-style: italic;
+
+      &:before {
+        content: "#";
+      }
     }
   }
 }

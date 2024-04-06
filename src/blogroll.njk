@@ -29,7 +29,7 @@ path: "/blogroll"
       {% endif %}
       (<a href="{{ blog.xmlUrl }}" class="u-url" rel="alternate">RSS</a>)
     </span>
-    <span>
+    <span class="blog-tags">
       {% for tag in blog.tags %}
       <span class="blog-tag">{{tag}}</span>
       {% endfor %}
