@@ -371,9 +371,9 @@ module.exports = [
     text: "The Popehat Report",
     author: "Ken White",
     authorWiki: "Popehat",
-    tags: ["law", "newsletter", "Substack"],
-    xmlUrl: "https://popehat.substack.com/feed",
-    htmlUrl: "https://popehat.substack.com/",
+    tags: ["law", "newsletter"],
+    xmlUrl: "https://rss.beehiiv.com/feeds/6QXMLvJf2y.xml",
+    htmlUrl: "https://www.popehat.com/",
   },
   {
     text: "The Present Age",
