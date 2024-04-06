@@ -2,7 +2,7 @@ module.exports = [
   {
     text: "Adactio",
     author: "Jeremy Keith",
-    authorWiki: "Jeremy Keith",
+    authorWiki: "Jeremy Keith (web developer)",
     tags: ["indieweb"],
     xmlUrl: "https://adactio.com/rss/",
     htmlUrl: "https://adactio.com/",
@@ -210,6 +210,7 @@ module.exports = [
   {
     text: "Money Stuff",
     author: "Matt Levine",
+    authorWiki: "Matt Levine (columnist)",
     tags: ["crypto", "finance", "newsletter"],
     xmlUrl:
       "https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/matthew-s-levine.rss",

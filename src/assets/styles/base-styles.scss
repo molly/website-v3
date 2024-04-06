@@ -96,6 +96,17 @@ a {
   }
 }
 
+.feed,
+.blogroll {
+  a[href^="https://en.wikipedia.org/"]:not(.cdx-social-link)::after
+  {
+    content: url("/assets/images/wikipedia.svg");
+    display: inline-block;
+    width: 0.8em;
+    margin-left: 0.25rem;
+  }
+}
+
 .in-text-image img {
   width: 100%;
   max-width: 30rem;
