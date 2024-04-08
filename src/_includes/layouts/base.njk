@@ -9,17 +9,9 @@
 
     <link rel="stylesheet" href="/assets/styles/base-styles.css" />
     <style>
-      {
-        % if pagecss %
-      }
-
-        {
-        % postcss pagecss %
-      }
-
-        {
-        % endif %
-      }
+      {% if pagecss %}
+        {% postcss pagecss %}
+      {% endif %}
     </style>
 
     <meta property='og:site_name' content='Molly White' />
