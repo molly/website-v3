@@ -34,11 +34,6 @@
   --sans-serif-fonts: "SansSerif", "Helvetica", sans-serif;
   --monospace-fonts: "SourceCode", "Menlo", "Monaco", "Courier New", monospace;
 
-  --image-underline-black: url("data:image/gif;base64,R0lGODlhAQABAIAAAAAAAAAAACH+EUNyZWF0ZWQgd2l0aCBHSU1QACwAAAAAAQABAAACAkQBADs=");
-  --image-underline-hover-black: url("data:image/gif;base64,R0lGODlhAQABAIABAERERP///yH+EUNyZWF0ZWQgd2l0aCBHSU1QACH5BAEKAAEALAAAAAABAAEAAAICRAEAOw==");
-  --image-underline-white: url("data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH+EUNyZWF0ZWQgd2l0aCBHSU1QACH5BAEKAAEALAAAAAABAAEAAAICRAEAOw==");
-  --image-underline-hover-white: url("data:image/gif;base64,R0lGODlhAQABAIABALm5uf///yH+EUNyZWF0ZWQgd2l0aCBHSU1QACH5BAEKAAEALAAAAAABAAEAAAICRAEAOw==");
-
   @media (prefers-color-scheme: dark) {
     --bg-color: #161616;
     --note-background-color: #333333;
@@ -66,14 +61,6 @@
 
     .bw-icon {
       filter: invert(100%);
-    }
-
-    a {
-      background-image: var(--image-underline-white);
-
-      &:hover {
-        background-image: var(--image-underline-hover-white);
-      }
     }
   }
 }
