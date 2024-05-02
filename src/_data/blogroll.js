@@ -8,6 +8,13 @@ module.exports = [
     htmlUrl: "https://adactio.com/",
   },
   {
+    text: "AINT",
+    author: "John Mark",
+    tags: ["technology"],
+    xmlUrl: "https://aint.johnmark.org/feed/",
+    htmlUrl: "https://aint.johnmark.org/",
+  },
+  {
     author: "Anil Dash",
     authorWiki: "Anil Dash",
     tags: ["web"],
@@ -25,6 +32,11 @@ module.exports = [
     tags: ["newsletter"],
     xmlUrl: "https://birchtree.me/rss/",
     htmlUrl: "https://birchtree.me/",
+  },
+  {
+    author: "Bob Sassone",
+    xmlUrl: "https://sassone.wordpress.com/feed/",
+    htmlUrl: "http://sassone.wordpress.com/",
   },
   {
     text: "cabel.com",
@@ -240,6 +252,13 @@ module.exports = [
     htmlUrl: "https://buttondown.email/ownyourweb",
   },
   {
+    text: "Paul's Dev Notes",
+    author: "Paul Frazee",
+    tags: ["technology"],
+    xmlUrl: "https://www.pfrazee.com/feed.xml",
+    htmlUrl: "https://pfrazee.com/blog",
+  },
+  {
     text: "Pixel Envy",
     author: "Nick Heer",
     xmlUrl: "https://pxlnv.com/feed/",
@@ -319,6 +338,13 @@ module.exports = [
     tags: ["newsletter", "substack"],
     xmlUrl: "https://subconscious.substack.com/feed",
     htmlUrl: "https://subconscious.substack.com/",
+  },
+  {
+    text: "Take on Rules",
+    author: "Jeremy Friesen",
+    tags: ["technology"],
+    xmlUrl: "https://takeonrules.com/index.xml",
+    htmlUrl: "https://takeonrules.com/",
   },
   {
     text: "Tantek \u00c7elik",
