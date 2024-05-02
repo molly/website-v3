@@ -89,10 +89,12 @@ a {
 .blogroll {
   a[href^="https://en.wikipedia.org/"]:not(.cdx-social-link)::after
   {
-    content: url("/assets/images/wikipedia.svg");
-    display: inline-block;
-    width: 0.8em;
-    margin-left: 0.25rem;
+    background-image: url(/assets/images/wikipedia.svg);
+    background-repeat: no-repeat;
+    background-size: 0.8em;
+    content: "    ";
+    white-space: pre-wrap;
+    background-position: right 0 bottom 40%;
   }
 }
 
