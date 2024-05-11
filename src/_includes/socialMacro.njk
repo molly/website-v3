@@ -2,6 +2,8 @@
   <li>
     {% if link.custom %}
       {{ link.custom | safe }}
+    {% elif link.href and not link.username %}
+      <a href="{{link.href}}" class="u-url">{{link.label}}</a>
     {% else %}
       {{link.label}}: 
       {% if link.href %}

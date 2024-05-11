@@ -18,14 +18,13 @@ const verifyLinks = [
       "IRC: <ul><li>Freenode: <code>GorillaWarfare<wbr/>@wikipedia<wbr/>/gorillawarfare</code> (no longer used)</li><li>Libera Chat: <code>GorillaWarfare<wbr/>@wikipedia<wbr/>/gorillawarfare</code> (rarely online these days)</li></ul>",
   },
   {
-    label: "Matrix",
-    href: "https://matrix.to/#/@molly0xfff:matrix.org",
-    username: "@molly0xfff:matrix.org",
-  },
-  {
     label: "Patreon",
     href: "https://www.patreon.com/mollywhite",
     username: "mollywhite",
+  },
+  {
+    label: "Signal",
+    href: "https://signal.me/#eu/EvSDonMbzo7UATFs7zYAiYPVY3Z07TR7WM6Oef6YABM2sIerozNFWIy_wGTm03a3",
   },
   {
     label: "Wikipedia",
