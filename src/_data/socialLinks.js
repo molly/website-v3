@@ -4,7 +4,7 @@ const data = [
   {
     label: "Bluesky",
     href: "https://bsky.app/profile/molly.wiki",
-    username: "molly.wiki",
+    username: "@molly.wiki",
   },
   {
     label: "Discord",
