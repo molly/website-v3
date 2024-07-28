@@ -5,24 +5,35 @@ page_class: "social"
 path: "/social"
 ---
 
-{% extends "layouts/with-nav.njk" %}
-{% block content %}
+{% extends "layouts/with-nav.njk" %} {% block content %}
 <h1>Social media</h1>
 <ul>
-  {% import "socialMacro.njk" as socialMacro %}
-  {% for link in socialLinks %}
-  {{socialMacro.socialLink(link)}}
+  {% import "socialMacro.njk" as socialMacro %} {% for link in socialLinks %}
+  {{
+    socialMacro.socialLink(link)
+  }}
   {% endfor %}
 </ul>
 <h2 id="w3igg">
   <i>Web3 is Going Just Great</i>
 </h2>
-<p>
-  <i>Web3 is Going Just Great</i> also has social media feeds:
-</p>
+<p><i>Web3 is Going Just Great</i> has social media feeds:</p>
 <ul>
   {% for link in w3iggSocialLinks %}
-  {{socialMacro.socialLink(link)}}
+  {{
+    socialMacro.socialLink(link)
+  }}
+  {% endfor %}
+</ul>
+<h2 id="ftc">
+  <i>Follow the Crypto</i>
+</h2>
+<p><i>Follow the Crypto</i> has social media feeds:</p>
+<ul>
+  {% for link in ftcSocialLinks %}
+  {{
+    socialMacro.socialLink(link)
+  }}
   {% endfor %}
 </ul>
 {% endblock %}

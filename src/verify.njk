@@ -5,43 +5,68 @@ page_class: "verify h-card"
 path: "/verify"
 ---
 
-{% extends "layouts/with-nav.njk" %}
-{% block content %}
+{% extends "layouts/with-nav.njk" %} {% block content %}
 <h1>Verify</h1>
-<p>This page serves as the system of record for my online identity. I control the following personal accounts:</p>
+<p>
+  This page serves as the system of record for my online identity. I control the
+  following personal accounts:
+</p>
 <ul>
-  {% import "socialMacro.njk" as socialMacro %}
-  {% for link in verifyLinks %}
-  {{socialMacro.socialLink(link)}}
+  {% import "socialMacro.njk" as socialMacro %} {% for link in verifyLinks %}
+  {{
+    socialMacro.socialLink(link)
+  }}
   {% endfor %}
 </ul>
-<p>I also own and control the domains <span class="u-url">mollywhite.net</span> and <span
-    class="u-url">molly.wiki</span>.</p>
-<p>My usual email addresses are
-  <span class="u-email">molly@mollywhite.net</span> and <span class="u-email">molly.white5@gmail.com</span>.<sup><a
-      href="#footnote1">1</a></sup> I have a <a href="/pgp">PGP
-    key</a> which I use for both. I also use
-  <span class="u-email">gorillawarfarewikipedia@gmail.com</span> for Wikimedia-related
-  matters.
+<p>
+  I also own and control the domains
+  <span class="u-url">mollywhite.net</span> and
+  <span class="u-url">molly.wiki</span>.
 </p>
-<p>If there's an account claiming to be me that's not on this list, it's probably an impersonator. If it's trying to
-  give you tips on crypto trading, it's <a
+<p>
+  My usual email addresses are
+  <span class="u-email">molly@mollywhite.net</span> and
+  <span class="u-email">molly.white5@gmail.com</span>.<sup
+    ><a href="#footnote1">1</a></sup
+  >
+  I have a <a href="/pgp">PGP key</a> which I use for both. I also use
+  <span class="u-email">gorillawarfarewikipedia@gmail.com</span> for
+  Wikimedia-related matters.
+</p>
+<p>
+  If there's an account claiming to be me that's not on this list, it's probably
+  an impersonator. If it's trying to give you tips on crypto trading, it's
+  <a
     href="https://www.dlnews.com/articles/defi/twitters-impersonation-problem-is-about-more-than-just-crypto-scams/"
-    target="_blank"><i>definitely</i> an impersonator</a>.</p>
+    target="_blank"
+    ><i>definitely</i> an impersonator</a
+  >.
+</p>
 <h2>
   <i>Web3 is Going Great</i>
 </h2>
 <p>For my <i>Web3 is Going Great</i> project:</p>
 {% for link in w3iggSocialLinks %}
-{{socialMacro.socialLink(link)}}
+{{ socialMacro.socialLink(link) }}
 {% endfor %}
-<p>I own and control the domains web3isgoinggreat.com (primary) and the redirects web3isgoingjustgreat.com,
-  web3isgreat.com, and w3igg.com.</p>
+<p>
+  I own and control the domains web3isgoinggreat.com (primary) and the redirects
+  web3isgoingjustgreat.com, web3isgreat.com, and w3igg.com.
+</p>
+<h2>
+  <i>Follow the Crypto</i>
+</h2>
+<p>For my <i>Follow the Crypto</i> project:</p>
+{% for link in ftcSocialLinks %}
+{{ socialMacro.socialLink(link) }}
+{% endfor %}
+<p>I own and control the domain followthecrypto.org.</p>
 <hr />
 <p>
   <sup>
     <a id="#footnote1">[1]</a>
-  </sup> These go to the same inbox, so please don't email both hoping for a quicker
+  </sup>
+  These go to the same inbox, so please don't email both hoping for a quicker
   reply.
 </p>
 {% endblock %}
