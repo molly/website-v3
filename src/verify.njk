@@ -46,9 +46,13 @@ path: "/verify"
   <i>Web3 is Going Great</i>
 </h2>
 <p>For my <i>Web3 is Going Great</i> project:</p>
-{% for link in w3iggSocialLinks %}
-{{ socialMacro.socialLink(link) }}
-{% endfor %}
+<ul>
+  {% for link in w3iggSocialLinks %}
+  {{
+    socialMacro.socialLink(link)
+  }}
+  {% endfor %}
+</ul>
 <p>
   I own and control the domains web3isgoinggreat.com (primary) and the redirects
   web3isgoingjustgreat.com, web3isgreat.com, and w3igg.com.
@@ -57,9 +61,13 @@ path: "/verify"
   <i>Follow the Crypto</i>
 </h2>
 <p>For my <i>Follow the Crypto</i> project:</p>
-{% for link in ftcSocialLinks %}
-{{ socialMacro.socialLink(link) }}
-{% endfor %}
+<ul>
+  {% for link in ftcSocialLinks %}
+  {{
+    socialMacro.socialLink(link)
+  }}
+  {% endfor %}
+</ul>
 <p>I own and control the domain followthecrypto.org.</p>
 <hr />
 <p>
