@@ -103,6 +103,14 @@ a {
   max-width: 30rem;
 }
 
+.in-text-image.wide img {
+  max-width: unset;
+}
+
+.in-text-image.bordered img {
+  border: 1px solid var(--hr-color);
+}
+
 hr {
   border: 0;
   border-bottom: 1px solid var(--hr-color);

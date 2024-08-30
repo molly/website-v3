@@ -168,8 +168,12 @@ body {
 .review .content .annotation-group {
   margin-top: 0;
 }
-.review .diff-add {
+.review .diff-add,
+.review mark.highlight-1 {
   background-color: var(--review-addition-color);
+}
+.review mark.highlight-2 {
+  background-color: var(--review-highlight-2);
 }
 .review .annotation {
   background-color: var(--bg-color);
