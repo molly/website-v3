@@ -25,6 +25,7 @@ const verifyLinks = [
   {
     label: "Signal",
     href: "https://signal.me/#eu/EvSDonMbzo7UATFs7zYAiYPVY3Z07TR7WM6Oef6YABM2sIerozNFWIy_wGTm03a3",
+    username: "molly0xfff.07",
   },
   {
     label: "Wikipedia",

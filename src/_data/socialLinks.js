@@ -12,6 +12,11 @@ const data = [
     username: "molly0xfff",
   },
   {
+    label: "Instagram",
+    href: "https://www.instagram.com/molly0xfff/",
+    username: "molly0xfff",
+  },
+  {
     label: "LinkedIn",
     href: "https://www.linkedin.com/in/mollyawhite/",
     username: "mollyawhite",
@@ -25,6 +30,11 @@ const data = [
     label: "Reddit",
     href: "https://www.reddit.com/user/watchfulprotector",
     username: "watchfulprotector",
+  },
+  {
+    label: "Threads",
+    href: "https://www.threads.net/@molly0xfff",
+    username: "molly0xfff",
   },
   {
     label: "TikTok",
