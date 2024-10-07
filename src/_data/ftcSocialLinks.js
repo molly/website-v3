@@ -6,7 +6,7 @@ const data = [
   },
   {
     label: "Mastodon",
-    href: "https://hachyderm.io/followthecrypto",
+    href: "https://hachyderm.io/@followthecrypto",
     username: "@followthecrypto@hachyderm.io",
   },
   {
