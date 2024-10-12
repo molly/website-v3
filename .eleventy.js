@@ -11,7 +11,8 @@ module.exports = function (eleventyConfig) {
     "src/assets/js": "assets/js",
     "src/assets/images": "assets/images",
     "src/site.webmanifest": "",
-    "node_modules/fontawesome-free": "assets/fonts/fontawesome-free",
+    "node_modules/@fortawesome/fontawesome-free":
+      "assets/fonts/fontawesome-free",
   });
 
   // Render CSS inline
