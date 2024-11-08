@@ -1,0 +1,151 @@
+module.exports = [
+  {
+    text: "404 Media",
+    xmlUrl: "https://www.404media.co/rss/",
+    htmlUrl: "https://www.404media.co/",
+  },
+  {
+    text: "Aftermath",
+    tags: ["games"],
+    xmlUrl: "https://aftermath.site/rss",
+    htmlUrl: "https://aftermath.site/",
+  },
+  {
+    text: "BleepingComputer",
+    tags: ["technology"],
+    xmlUrl: "https://www.bleepingcomputer.com/feed/",
+    htmlUrl: "http://www.bleepingcomputer.com/forums/f/2/news/",
+  },
+  {
+    text: "Court Watch",
+    author: "Seamus Hughes",
+    tags: ["law"],
+    xmlUrl: "https://seamushughes.substack.com/feed",
+    htmlUrl: "https://seamushughes.substack.com/",
+  },
+  {
+    text: "Defector",
+    tags: ["sports"],
+    xmlUrl: "https://defector.com/feed",
+    htmlUrl: "https://defector.com/",
+  },
+  {
+    text: "Erin In The Morning",
+    author: "Erin Reed",
+    authorWiki: "Erin Reed (journalist)",
+    tags: ["LGBT"],
+    xmlUrl: "https://www.erininthemorning.com/feed",
+    htmlUrl: "https://www.erininthemorning.com/",
+  },
+  {
+    text: "Fix The News",
+    xmlUrl: "https://fixthenews.com/rss/",
+    htmlUrl: "https://fixthenews.com/",
+  },
+  {
+    text: "Flaming Hydra",
+    xmlUrl: "https://flaminghydra.com/rss/",
+    htmlUrl: "https://flaminghydra.com/",
+  },
+  {
+    text: "It's Going Down",
+    xmlUrl: "https://itsgoingdown.org/feed/",
+    htmlUrl: "https://itsgoingdown.org/",
+  },
+  {
+    text: "Money Stuff",
+    author: "Matt Levine",
+    authorWiki: "Matt Levine (columnist)",
+    tags: ["finance"],
+    xmlUrl:
+      "https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/matthew-s-levine.rss",
+    htmlUrl:
+      "https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/matthew-s-levine",
+  },
+  {
+    text: "MIT Technology Review",
+    tags: ["technology"],
+    xmlUrl: "https://www.technologyreview.com/stream/rss/",
+    htmlUrl: "https://www.technologyreview.com/stream/?sort=recent",
+  },
+  {
+    text: "OpenSecrets Blog",
+    xmlUrl: "https://www.opensecrets.org/news/feed",
+    htmlUrl: "https://www.opensecrets.org/news",
+  },
+  {
+    text: "Prison Journalism Project",
+    tags: ["criminal-justice"],
+    xmlUrl: "https://prisonjournalismproject.org/feed/",
+    htmlUrl: "https://prisonjournalismproject.org/",
+  },
+  {
+    text: "ProPublica",
+    xmlUrl: "https://feeds.propublica.org/propublica/main",
+    htmlUrl: "https://www.propublica.org/",
+  },
+  {
+    text: "SCOTUSblog",
+    tags: ["law"],
+    xmlUrl: "https://www.scotusblog.com/feed/",
+    htmlUrl: "https://www.scotusblog.com/",
+  },
+  {
+    text: "Techdirt",
+    tags: ["technology", "law"],
+    xmlUrl: "https://www.techdirt.com/techdirt_rss.xml",
+    htmlUrl: "https://www.techdirt.com/",
+  },
+  {
+    text: "Tech Policy Press",
+    tags: ["technology"],
+    xmlUrl: "https://www.techpolicy.press/rss/feed.xml",
+    htmlUrl: "https://techpolicy.vercel.app/",
+  },
+  {
+    text: "The 19th",
+    xmlUrl: "https://19thnews.org/feed/",
+    htmlUrl: "https://19thnews.org/",
+  },
+  {
+    text: "The Intercept",
+    xmlUrl: "https://firstlook.org/theintercept/feed/",
+    htmlUrl: "https://firstlook.org/theintercept",
+  },
+  {
+    text: "The Maine Monitor",
+    xmlUrl: "https://themainemonitor.org/feed/",
+    htmlUrl: "https://themainemonitor.org/",
+  },
+  {
+    text: "The Markup",
+    tags: ["technology"],
+    xmlUrl: "https://themarkup.org/feeds/rss.xml",
+    htmlUrl: "https://themarkup.org/",
+  },
+  {
+    text: "The Marshall Project",
+    tags: ["criminal-justice"],
+    xmlUrl: "https://www.themarshallproject.org/rss/recent.rss",
+    htmlUrl: "https://www.themarshallproject.org/",
+  },
+  {
+    text: "The Present Age",
+    author: "Parker Molloy",
+    authorWiki: "Parker Molloy",
+    xmlUrl: "https://www.readtpa.com/feed",
+    htmlUrl: "https://www.readtpa.com/",
+  },
+  {
+    text: "Unicorn Riot",
+    xmlUrl: "http://www.unicornriot.ninja/?feed=rss2",
+    htmlUrl: "http://www.unicornriot.ninja/",
+  },
+  {
+    text: "User Mag",
+    author: "Taylor Lorenz",
+    authorWiki: "Taylor Lorenz",
+    xmlUrl: "https://www.usermag.co/feed",
+    htmlUrl: "https://www.usermag.co/",
+  },
+];

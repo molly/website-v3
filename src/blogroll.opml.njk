@@ -10,9 +10,17 @@ permalink: /blogroll.opml.xml
   </head>
 
   <body>
-    {% for site in blogroll %}
-    <outline text="{{ site.text if site.text else site.author }}" title="{{ site.text if site.text else site.author }}"
-      type="rss" xmlUrl="{{ site.xmlUrl }}" htmlUrl="{{ site.htmlUrl }}" />
-    {% endfor %}
+    <outline text="Blogs" title="Blogs">
+      {% for site in blogsBlogroll %}
+      <outline text="{{ site.text if site.text else site.author }}" title="{{ site.text if site.text else site.author }}"
+        type="rss" xmlUrl="{{ site.xmlUrl }}" htmlUrl="{{ site.htmlUrl }}" />
+      {% endfor %}
+    </outline>
+    <outline text="News" title="News">
+      {% for site in newsBlogroll %}
+      <outline text="{{ site.text if site.text else site.author }}" title="{{ site.text if site.text else site.author }}"
+        type="rss" xmlUrl="{{ site.xmlUrl }}" htmlUrl="{{ site.htmlUrl }}" />
+      {% endfor %}
+    </outline>
   </body>
 </opml>

@@ -1,5 +1,17 @@
 module.exports = [
   {
+    text: "404 Media",
+    tags: ["high-volume", "news", "technology"],
+    xmlUrl: "https://www.404media.co/rss/",
+    htmlUrl: "https://www.404media.co/",
+  },
+  {
+    text: "A Very Good Blog",
+    author: "Keenan",
+    xmlUrl: "https://gkeenan.co/avgb/feed.xml",
+    htmlUrl: "https://gkeenan.co/avgb",
+  },
+  {
     text: "Adactio",
     author: "Jeremy Keith",
     authorWiki: "Jeremy Keith (web developer)",
@@ -22,7 +34,13 @@ module.exports = [
     htmlUrl: "https://dashes.com/anil/",
   },
   {
+    author: "Aram Zucker-Scharff",
+    xmlUrl: "https://aramzs.xyz/writing/feed.xml",
+    htmlUrl: "https://aramzs.xyz/",
+  },
+  {
     author: "Ben Werdm\u00fcller",
+    tags: ["indieweb", "technology", "web"],
     xmlUrl: "https://werd.io/?_t=rss",
     htmlUrl: "https://werd.io/",
   },
@@ -52,11 +70,10 @@ module.exports = [
     htmlUrl: "https://blog.codinghorror.com/",
   },
   {
-    text: "Court Watch",
-    author: "Seamus Hughes",
-    tags: ["law", "newsletter", "Substack"],
-    xmlUrl: "https://seamushughes.substack.com/feed",
-    htmlUrl: "https://seamushughes.substack.com/",
+    text: "computers are bad",
+    tags: ["technology"],
+    xmlUrl: "https://computer.rip/rss.xml",
+    htmlUrl: "https://computer.rip/",
   },
   {
     author: "Dan Luu",
@@ -73,6 +90,7 @@ module.exports = [
     text: "Daring Fireball",
     author: "John Gruber",
     authorWiki: "John Gruber",
+    tags: ["high-volume", "news", "technology"],
     xmlUrl: "https://daringfireball.net/feeds/main",
     htmlUrl: "https://daringfireball.net/",
   },
@@ -87,9 +105,16 @@ module.exports = [
     text: "Disconnect",
     author: "Paris Marx",
     authorWiki: "Paris Marx",
-    tags: ["newsletter"],
+    tags: ["newsletter", "technology"],
     xmlUrl: "https://disconnect.blog/rss/",
     htmlUrl: "https://disconnect.blog/",
+  },
+  {
+    text: "Doc Searls Weblog",
+    author: "Doc Searls",
+    authorWiki: "Doc Searls",
+    xmlUrl: "https://doc.searls.com/feed/",
+    htmlUrl: "https://doc.searls.com/",
   },
   {
     text: "DSHR's Blog",
@@ -102,9 +127,15 @@ module.exports = [
   {
     text: "Where's Your Ed At",
     author: "Ed Zitron",
-    tags: ["crypto", "newsletter", "technology"],
+    tags: ["newsletter", "technology"],
     xmlUrl: "https://www.wheresyoured.at/rss/",
     htmlUrl: "https://www.wheresyoured.at/",
+  },
+  {
+    text: "internet website lol",
+    author: "Erin Kissane",
+    xmlUrl: "https://erinkissane.com/feed.rss",
+    htmlUrl: "https://erinkissane.com/",
   },
   {
     author: "Ethan Marcotte",
@@ -112,9 +143,34 @@ module.exports = [
     htmlUrl: "https://ethanmarcotte.com/",
   },
   {
+    author: "Evan Boehs",
+    tags: ["technology"],
+    xmlUrl: "https://boehs.org/in/blog.xml",
+    htmlUrl: "https://boehs.org/",
+  },
+  {
     text: "fLaMEdFURY",
     xmlUrl: "https://flamedfury.com/feed.xml",
     htmlUrl: "https://flamedfury.com/",
+  },
+  {
+    text: "Flaming Hydra",
+    tags: ["high-volume", "news"],
+    xmlUrl: "https://flaminghydra.com/rss/",
+    htmlUrl: "https://flaminghydra.com/",
+  },
+  {
+    text: "FlowingData",
+    author: "Nathan Yau",
+    xmlUrl: "https://flowingdata.com/feed",
+    htmlUrl: "http://flowingdata.com/",
+  },
+  {
+    text: "from jason",
+    author: "Jason Velazquez",
+    tags: ["technology", "web"],
+    xmlUrl: "https://www.fromjason.xyz/feed/feed.xml",
+    htmlUrl: "https://fromjason.xyz/",
   },
   {
     text: "Fudge Sunday",
@@ -124,10 +180,8 @@ module.exports = [
   },
   {
     text: "Garbage Day",
-    author: "Ryan Broderick",
-    authorWiki: "Ryan Broderick",
-    tags: ["newsletter", "web"],
-    xmlUrl: "https://rss.beehiiv.com/feeds/99VTTjt0N1.xml",
+    tags: ["news", "newsletter"],
+    xmlUrl: "https://rss.beehiiv.com/feeds/owMwaGYU36.xml",
     htmlUrl: "https://www.garbageday.email/",
   },
   {
@@ -157,29 +211,53 @@ module.exports = [
     htmlUrl: "http://emmas.site/",
   },
   {
+    text: "Interconnected",
+    author: "Matt Webb",
+    xmlUrl: "https://interconnected.org/home/feed",
+    htmlUrl: "https://interconnected.org/home",
+  },
+  {
     author: "Jacob Silverman",
-    tag: "newsletter, Substack, technology",
+    tags: ["newsletter", "Substack", "technology"],
     xmlUrl: "https://www.jacobsilverman.com/feed",
     htmlUrl: "https://www.jacobsilverman.com/",
   },
   {
     author: "James Cridland",
-    tag: "indieweb",
+    tags: ["indieweb"],
     xmlUrl: "https://james.cridland.net/index.xml",
     htmlUrl: "https://james.cridland.net/",
   },
   {
-    text: "James G",
-    tag: "indieweb",
+    author: "James G",
+    tags: ["indieweb"],
     xmlUrl:
       "https://granary.io/url?input=html&output=rss&url=https://jamesg.blog",
     htmlUrl: "https://jamesg.blog/",
+  },
+  {
+    text: "@Westenberg",
+    author: "Joan Westenberg",
+    xmlUrl: "https://www.joanwestenberg.com/rss/",
+    htmlUrl: "https://www.joanwestenberg.com/",
   },
   {
     author: "Josh Collinsworth",
     tags: ["technology"],
     xmlUrl: "https://joshcollinsworth.com/rss",
     htmlUrl: "https://joshcollinsworth.com/",
+  },
+  {
+    author: "Juha-Matti Santala",
+    tags: ["technology"],
+    xmlUrl: "https://hamatti.org/feed/feed.xml",
+    htmlUrl: "https://hamatti.org/",
+  },
+  {
+    author: "Justin Pot",
+    tags: ["technology"],
+    xmlUrl: "https://justinpot.com/feed/",
+    htmlUrl: "https://justinpot.com/",
   },
   {
     text: "jwz",
@@ -210,6 +288,19 @@ module.exports = [
     htmlUrl: "https://lotsoflinks.substack.com/",
   },
   {
+    text: "Ludicity",
+    author: "Nikhil Suresh",
+    tags: ["technology"],
+    xmlUrl: "https://ludic.mataroa.blog/rss/",
+    htmlUrl: "https://ludic.mataroa.blog/",
+  },
+  {
+    text: "lyonheart.us",
+    author: "Matthew Lyon",
+    xmlUrl: "https://lyonheart.us/index.xml",
+    htmlUrl: "https://lyonheart.us/",
+  },
+  {
     author: "Tom MacWright",
     xmlUrl: "https://macwright.com/micro/rss.xml",
     htmlUrl: "https://macwright.com/",
@@ -220,14 +311,15 @@ module.exports = [
     htmlUrl: "https://maggieappleton.com/",
   },
   {
-    text: "Money Stuff",
-    author: "Matt Levine",
-    authorWiki: "Matt Levine (columnist)",
-    tags: ["crypto", "finance", "newsletter"],
-    xmlUrl:
-      "https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/matthew-s-levine.rss",
-    htmlUrl:
-      "https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/matthew-s-levine",
+    author: "Manuel Moreale",
+    xmlUrl: "https://manuelmoreale.com/feed/rss",
+    htmlUrl: "https://manuelmoreale.com/",
+  },
+  {
+    text: "Matthias Ott",
+    author: "Matthias Ott",
+    xmlUrl: "https://matthiasott.com/rss",
+    htmlUrl: "https://matthiasott.com/",
   },
   {
     text: "Mind and Iron",
@@ -240,7 +332,7 @@ module.exports = [
     text: "ongoing",
     author: "Tim Bray",
     authorWiki: "Tim Bray",
-    comment: "indieweb",
+    tags: ["indieweb"],
     xmlUrl: "https://www.tbray.org/ongoing/ongoing.atom",
     htmlUrl: "https://www.tbray.org/ongoing/",
   },
@@ -265,7 +357,7 @@ module.exports = [
     htmlUrl: "http://pxlnv.com/",
   },
   {
-    text: "Pluralistic: Daily links",
+    text: "Pluralistic",
     author: "Cory Doctorow",
     authorWiki: "Cory Doctorow",
     xmlUrl: "https://pluralistic.net/feed/",
@@ -292,6 +384,18 @@ module.exports = [
     htmlUrl: "https://buttondown.email/cassidoo",
   },
   {
+    text: "Richard Felix",
+    author: "Richard Felix",
+    xmlUrl: "https://richardfelix.com/feed.xml",
+    htmlUrl: "https://richardfelix.com/",
+  },
+  {
+    text: "Ricky Mondello",
+    author: "Ricky Mondello",
+    xmlUrl: "https://rmondello.com/feed/",
+    htmlUrl: "https://rmondello.com/",
+  },
+  {
     text: "Schneier on Security",
     author: "Bruce Schneier",
     authorWiki: "Bruce Schneier",
@@ -303,6 +407,14 @@ module.exports = [
     author: "Scott Hanselman",
     xmlUrl: "https://www.hanselman.com/blog/feed/rss",
     htmlUrl: "https://www.hanselman.com/blog/",
+  },
+  {
+    text: "Scripting News",
+    author: "Dave Winer",
+    authorWiki: "Dave Winer",
+    tags: ["high-volume"],
+    xmlUrl: "http://scripting.com/rss.xml",
+    htmlUrl: "http://scripting.com/",
   },
   {
     text: "Sentencing Law and Policy",
@@ -328,10 +440,16 @@ module.exports = [
   },
   {
     text: "Songs on the Security of Networks",
-    author: 'Micha\u0142 "rysiek" Wo\u017aniak',
+    author: "Micha\u0142 “rysiek” Wo\u017aniak",
     tags: ["technology"],
     xmlUrl: "https://rys.io/feed.rss",
     htmlUrl: "https://rys.io/",
+  },
+  {
+    text: "starbreaker.org",
+    author: "Matthew Graybosch",
+    xmlUrl: "https://starbreaker.org/feeds/everything.xml",
+    htmlUrl: "https://starbreaker.org/",
   },
   {
     text: "Subconscious",
@@ -347,7 +465,6 @@ module.exports = [
     htmlUrl: "https://takeonrules.com/",
   },
   {
-    text: "Tantek \u00c7elik",
     author: "Tantek \u00c7elik",
     authorWiki: "Tantek \u00c7elik",
     tags: ["indieweb"],
@@ -355,20 +472,14 @@ module.exports = [
     htmlUrl: "https://tantek.com/",
   },
   {
-    text: "Tech + Economics + Humans",
-    author: "Joan Westenberg",
-    tags: ["newsletter", "technology"],
-    xmlUrl: "https://joanwestenberg.com/blog?format=rss",
-    htmlUrl: "https://joanwestenberg.com/",
-  },
-  {
     text: "Techdirt",
+    tags: ["high-volume", "news"],
     xmlUrl: "https://www.techdirt.com/techdirt_rss.xml",
     htmlUrl: "https://www.techdirt.com/",
   },
   {
     author: "Terence Eden",
-    tag: "indieweb",
+    tags: ["indieweb"],
     xmlUrl: "https://shkspr.mobi/blog/feed/atom/",
     htmlUrl: "https://shkspr.mobi/blog",
   },
@@ -411,6 +522,12 @@ module.exports = [
     htmlUrl: "https://www.readtpa.com/",
   },
   {
+    text: "The Public Domain Review",
+    tags: ["archives"],
+    xmlUrl: "https://publicdomainreview.org/rss.xml",
+    htmlUrl: "https://publicdomainreview.org/",
+  },
+  {
     text: "The Wikipedian",
     author: "William Beutler",
     tags: ["newsletter", "Substack", "Wikipedia"],
@@ -430,6 +547,12 @@ module.exports = [
     tags: ["newsletter"],
     xmlUrl: "https://rss.beehiiv.com/feeds/ZRiesnGI0u.xml",
     htmlUrl: "https://www.todayintabs.com/",
+  },
+  {
+    text: "Mind Garden",
+    author: "Tracy Durnell",
+    xmlUrl: "https://tracydurnell.com/feed/",
+    htmlUrl: "https://tracydurnell.com/",
   },
   {
     text: "Untangled",

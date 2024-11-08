@@ -5,36 +5,25 @@ page_class: "blogroll"
 path: "/blogroll"
 ---
 
-{% extends "layouts/with-nav.njk" %}
-{% block content %}
+{% extends "layouts/with-nav.njk" %} {% block content %}
 <h1>Blogroll</h1>
-<p>This is an incomplete list of some of the blogs I like to read. It changes often.<br />
-  If you want to add them all to your RSS reader, <a href="/blogroll.opml.xml">download the OPML</a> file.</p>
+<p>
+  This is an incomplete list of some of the blogs I like to read. It changes
+  often.<br />
+  If you want to add them all to your RSS reader,
+  <a href="/blogroll.opml.xml">download the OPML</a> file.
+</p>
+<h2>Blogs</h2>
 <ul class="blog-list">
-  {% for blog in blogroll %}
-  <li>
-    <span class="h-card">
-      {% if blog.author %}
-      {% if blog.authorWiki %}
-      <a href="https://en.wikipedia.org/wiki/{{blog.authorWiki.replace(' ', '_')}}" class="u-url"><span
-          class="p-name">{{ blog.author }}</span>'s</a>
-      {% else %}
-      <span class="p-name">{{ blog.author }}</span>'s
-      {% endif %}
-      {% endif %}
-      {% if blog.text %}
-      <i><a href="{{ blog.htmlUrl }}" class="u-url">{{ blog.text }}</a></i>
-      {% else %}
-      <a href="{{ blog.htmlUrl }}" class="u-url">blog</a>
-      {% endif %}
-      (<a href="{{ blog.xmlUrl }}" class="u-url" rel="alternate">RSS</a>)
-    </span>
-    <span class="blog-tags">
-      {% for tag in blog.tags %}
-      <span class="blog-tag">{{tag}}</span>
-      {% endfor %}
-    </span>
-  </li>
+  {% import "blogrollMacro.njk" as blogrollMacro %}
+  {% for blog in blogsBlogroll %}
+  {{ blogrollMacro.blogrollEntry(blog) }}
+  {% endfor %}
+</ul>
+<h2>News</h2>
+<ul class="blog-list">
+  {% for blog in newsBlogroll %}
+  {{ blogrollMacro.blogrollEntry(blog) }}
   {% endfor %}
 </ul>
 {% endblock %}

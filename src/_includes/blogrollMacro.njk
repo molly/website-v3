@@ -1,0 +1,28 @@
+{% macro blogrollEntry(blog) %}
+<li>
+  <span class="h-card">
+    {% if blog.author %}
+      {% if blog.authorWiki %}
+        <a href="https://en.wikipedia.org/wiki/{{ blog.authorWiki.replace(' ', '_') }}" class="u-url">
+          <span class="p-name">{{ blog.author }}</span>&rsquo;{% if blog.author.slice(-1) != "s" %}s{% endif %}
+        </a>
+      {% else %}
+        <span class="p-name">{{ blog.author }}</span>&rsquo;{% if blog.author.slice(-1) != "s" %}s{% endif %}
+      {% endif %}
+    {% endif %}
+    {% if blog.text %}
+    <i>
+      <a href="{{ blog.htmlUrl }}" class="u-url">{{ blog.text }}</a>
+    </i>
+    {% else %}
+      <a href="{{ blog.htmlUrl }}" class="u-url">blog</a>
+    {% endif %}
+     (<a href="{{ blog.xmlUrl }}" class="u-url" rel="alternate">RSS</a>)
+  </span>
+  <span class="blog-tags">
+    {% for tag in blog.tags %}
+      <span class="blog-tag">{{ tag.replaceAll("-", " ") }}</span>
+    {% endfor %}
+  </span>
+</li>
+{% endmacro %}
