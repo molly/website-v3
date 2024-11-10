@@ -9,22 +9,26 @@ path: "/blogroll"
 <h1>Blogroll</h1>
 <p>
   This is an incomplete list of some of the blogs I like to read. It changes
-  often.<br />
-  If you want to add them all to your RSS reader,
-  <a href="/blogroll.opml.xml">download the OPML</a> file. However, please note that this is a bit of a firehose — 
-  you might prefer to pick and choose from the list!
+  often. If you want to add them all to your RSS reader,
+  <a href="/blogroll.opml.xml">download the OPML</a> file. However, please note
+  that this is a bit of a firehose — you might prefer to pick and choose from
+  the list!
 </p>
 <h2>Blogs</h2>
 <ul class="blog-list">
-  {% import "blogrollMacro.njk" as blogrollMacro %}
-  {% for blog in blogsBlogroll %}
-  {{ blogrollMacro.blogrollEntry(blog) }}
+  {% import "blogrollMacro.njk" as blogrollMacro %} {% for blog in blogsBlogroll
+  %}
+  {{
+    blogrollMacro.blogrollEntry(blog)
+  }}
   {% endfor %}
 </ul>
 <h2>News</h2>
 <ul class="blog-list">
   {% for blog in newsBlogroll %}
-  {{ blogrollMacro.blogrollEntry(blog) }}
+  {{
+    blogrollMacro.blogrollEntry(blog)
+  }}
   {% endfor %}
 </ul>
 {% endblock %}
