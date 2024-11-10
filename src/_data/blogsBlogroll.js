@@ -1,11 +1,5 @@
 module.exports = [
   {
-    text: "404 Media",
-    tags: ["high-volume", "news", "technology"],
-    xmlUrl: "https://www.404media.co/rss/",
-    htmlUrl: "https://www.404media.co/",
-  },
-  {
     text: "A Very Good Blog",
     author: "Keenan",
     xmlUrl: "https://gkeenan.co/avgb/feed.xml",
@@ -37,6 +31,13 @@ module.exports = [
     author: "Aram Zucker-Scharff",
     xmlUrl: "https://aramzs.xyz/writing/feed.xml",
     htmlUrl: "https://aramzs.xyz/",
+  },
+  {
+    text: "BANNED IN YOUR STATE",
+    author: "Laura Jedeed",
+    tags: ["newsletter", "Substack"],
+    xmlUrl: "https://www.bannedinyourstate.com/feed",
+    htmlUrl: "https://www.bannedinyourstate.com/",
   },
   {
     author: "Ben Werdm\u00fcller",
@@ -191,6 +192,12 @@ module.exports = [
     htmlUrl: "https://gilest.org/",
   },
   {
+    text: "GioCities",
+    author: "Gio",
+    xmlUrl: "https://blog.giovanh.com/feeds/rss.xml",
+    htmlUrl: "https://blog.giovanh.com/",
+  },
+  {
     text: "Horrific/Terrific",
     author: "Georgia Iacovou",
     tags: ["newsletter", "Substack"],
@@ -274,6 +281,13 @@ module.exports = [
     htmlUrl: "https://kevquirk.com/",
   },
   {
+    text: "Law Dork",
+    author: "Chris Geidner",
+    tags: ["law", "newsletter", "Substack"],
+    xmlUrl: "https://www.lawdork.com/feed",
+    htmlUrl: "https://www.lawdork.com",
+  },
+  {
     text: "Live Laugh Blog",
     author: "Jenn Schiffer",
     xmlUrl: "https://livelaugh.blog/rss.xml",
@@ -311,6 +325,11 @@ module.exports = [
     htmlUrl: "https://maggieappleton.com/",
   },
   {
+    author: "maia crimew",
+    xmlUrl: "https://maia.crimew.gay/feed.xml",
+    htmlUrl: "https://maia.crimew.gay/",
+  },
+  {
     author: "Manuel Moreale",
     xmlUrl: "https://manuelmoreale.com/feed/rss",
     htmlUrl: "https://manuelmoreale.com/",
@@ -322,11 +341,11 @@ module.exports = [
     htmlUrl: "https://matthiasott.com/",
   },
   {
-    text: "Mind and Iron",
-    author: "Steven Zeitchik",
+    text: "Men Yell at Me",
+    author: "Lyz Lenz",
     tags: ["newsletter", "Substack"],
-    xmlUrl: "https://mindandiron.substack.com/feed",
-    htmlUrl: "https://mindandiron.substack.com/",
+    xmlUrl: "https://lyz.substack.com/feed",
+    htmlUrl: "https://lyz.substack.com/",
   },
   {
     text: "ongoing",
@@ -440,7 +459,7 @@ module.exports = [
   },
   {
     text: "Songs on the Security of Networks",
-    author: "Micha\u0142 “rysiek” Wo\u017aniak",
+    author: "Micha\u0142 \u201crysiek\u201d Wo\u017aniak",
     tags: ["technology"],
     xmlUrl: "https://rys.io/feed.rss",
     htmlUrl: "https://rys.io/",
@@ -450,12 +469,6 @@ module.exports = [
     author: "Matthew Graybosch",
     xmlUrl: "https://starbreaker.org/feeds/everything.xml",
     htmlUrl: "https://starbreaker.org/",
-  },
-  {
-    text: "Subconscious",
-    tags: ["newsletter", "substack"],
-    xmlUrl: "https://subconscious.substack.com/feed",
-    htmlUrl: "https://subconscious.substack.com/",
   },
   {
     text: "Take on Rules",
@@ -478,32 +491,16 @@ module.exports = [
     htmlUrl: "https://www.techdirt.com/",
   },
   {
+    text: "Tedium",
+    tags: ["newsletter"],
+    xmlUrl: "https://feed.tedium.co/",
+    htmlUrl: "https://tedium.co/",
+  },
+  {
     author: "Terence Eden",
     tags: ["indieweb"],
     xmlUrl: "https://shkspr.mobi/blog/feed/atom/",
     htmlUrl: "https://shkspr.mobi/blog",
-  },
-  {
-    text: "The Dig",
-    author: "Francine McKenna",
-    authorWiki: "Francine McKenna",
-    tags: ["crypto", "finance", "newsletter", "Substack"],
-    xmlUrl: "https://thedig.substack.com/feed",
-    htmlUrl: "https://thedig.substack.com/",
-  },
-  {
-    text: "The Future, Now and Then",
-    author: "Dave Karpf",
-    tags: ["newsletter", "Substack", "technology"],
-    xmlUrl: "https://davekarpf.substack.com/feed",
-    htmlUrl: "https://davekarpf.substack.com/",
-  },
-  {
-    text: "The Handbasket",
-    author: "Marisa Kabas",
-    tags: ["news", "newsletter"],
-    xmlUrl: "https://rss.beehiiv.com/feeds/40ZQ7CSldT.xml",
-    htmlUrl: "https://www.thehandbasket.co/",
   },
   {
     text: "The History of the Web",

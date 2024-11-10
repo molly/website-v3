@@ -5,30 +5,51 @@ page_class: "blogroll"
 path: "/blogroll"
 ---
 
-{% extends "layouts/with-nav.njk" %} {% block content %}
+{% extends "layouts/with-nav.njk" %}
+{% block content %}
 <h1>Blogroll</h1>
 <p>
-  This is an incomplete list of some of the blogs I like to read. It changes
-  often. If you want to add them all to your RSS reader,
-  <a href="/blogroll.opml.xml">download the OPML</a> file. However, please note
-  that this is a bit of a firehose — you might prefer to pick and choose from
-  the list!
+  This is an incomplete list of some of the blogs, newsletters, and news sites I
+  like to read. They change often. The lists overlap somewhat.
 </p>
+<p>
+  If you want to add these to your RSS reader,<sup
+    ><a href="#footnote1">1</a></sup
+  >
+  download and import the corresponding OPML file. You can also
+  <a href="/all.opml.xml">subscribe to the whole bunch</a>, but please note that
+  this is a bit of a firehose — you might prefer to pick and choose from the list!
+</p>
+
 <h2>Blogs</h2>
+(<a href="/blogs.opml.xml">OPML</a>)
 <ul class="blog-list">
-  {% import "blogrollMacro.njk" as blogrollMacro %} {% for blog in blogsBlogroll
-  %}
-  {{
-    blogrollMacro.blogrollEntry(blog)
-  }}
+  {% import "blogrollMacro.njk" as blogrollMacro %}
+  {% for blog in blogsBlogroll|sortBlogs %}
+    {{blogrollMacro.blogrollEntry(blog)}}
   {% endfor %}
 </ul>
+
 <h2>News</h2>
+(<a href="/news.opml.xml">OPML</a>)
 <ul class="blog-list">
-  {% for blog in newsBlogroll %}
-  {{
-    blogrollMacro.blogrollEntry(blog)
-  }}
+  {% for blog in newsBlogroll|sortBlogs %}
+    {{blogrollMacro.blogrollEntry(blog)}}
   {% endfor %}
 </ul>
+
+<h2>Newsletters</h2>
+(<a href="/newsletters.opml.xml">OPML</a>)
+<ul class="blog-list">
+  {% for blog in newslettersBlogroll|sortBlogs %}
+    {{blogrollMacro.blogrollEntry(blog)}}
+  {% endfor %}
+</ul>
+
+<p>
+  <sup>
+    <a id="footnote1">[1]</a>
+  </sup>
+  I use <a href="https://www.inoreader.com">Inoreader</a>.
+</p>
 {% endblock %}

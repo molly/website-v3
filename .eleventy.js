@@ -15,6 +15,26 @@ module.exports = function (eleventyConfig) {
       "assets/fonts/fontawesome-free",
   });
 
+  eleventyConfig.addFilter("sortBlogs", (posts) => {
+    return posts.sort((a, b) => {
+      const authorA = a.author || "";
+      const authorB = b.author || "";
+      const textA = a.text;
+      const textB = b.text;
+
+      // Compare by author if available; otherwise, compare by text
+      if (authorA && authorB) {
+        return authorA.localeCompare(authorB);
+      } else if (authorA) {
+        return -1; // a should come before b
+      } else if (authorB) {
+        return 1; // b should come before a
+      } else {
+        return textA.localeCompare(textB);
+      }
+    });
+  });
+
   // Render CSS inline
   eleventyConfig.addShortcode("postcss", async (filename) => {
     const filepath = path.join("src/assets/styles", filename);

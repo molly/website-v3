@@ -17,13 +17,6 @@ module.exports = [
     htmlUrl: "http://www.bleepingcomputer.com/forums/f/2/news/",
   },
   {
-    text: "Court Watch",
-    author: "Seamus Hughes",
-    tags: ["law"],
-    xmlUrl: "https://seamushughes.substack.com/feed",
-    htmlUrl: "https://seamushughes.substack.com/",
-  },
-  {
     text: "Defector",
     tags: ["sports"],
     xmlUrl: "https://defector.com/feed",
@@ -63,6 +56,11 @@ module.exports = [
       "https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/matthew-s-levine",
   },
   {
+    text: "Mississippi Free Press",
+    xmlUrl: "https://www.mississippifreepress.org/feed/",
+    htmlUrl: "https://www.mississippifreepress.org/",
+  },
+  {
     text: "MIT Technology Review",
     tags: ["technology"],
     xmlUrl: "https://www.technologyreview.com/stream/rss/",
@@ -91,21 +89,34 @@ module.exports = [
     htmlUrl: "https://www.scotusblog.com/",
   },
   {
-    text: "Techdirt",
-    tags: ["technology", "law"],
-    xmlUrl: "https://www.techdirt.com/techdirt_rss.xml",
-    htmlUrl: "https://www.techdirt.com/",
-  },
-  {
     text: "Tech Policy Press",
     tags: ["technology"],
     xmlUrl: "https://www.techpolicy.press/rss/feed.xml",
     htmlUrl: "https://techpolicy.vercel.app/",
   },
   {
+    text: "Techdirt",
+    tags: ["technology", "law"],
+    xmlUrl: "https://www.techdirt.com/techdirt_rss.xml",
+    htmlUrl: "https://www.techdirt.com/",
+  },
+  {
     text: "The 19th",
     xmlUrl: "https://19thnews.org/feed/",
     htmlUrl: "https://19thnews.org/",
+  },
+  {
+    text: "The Counteroffensive",
+    author: "Tim Mak",
+    tags: ["Ukraine"],
+    xmlUrl: "https://www.counteroffensive.news/feed",
+    htmlUrl: "https://www.counteroffensive.news/",
+  },
+  {
+    text: "The Future, Now and Then",
+    author: "Dave Karpf",
+    xmlUrl: "https://davekarpf.substack.com/feed",
+    htmlUrl: "https://davekarpf.substack.com/",
   },
   {
     text: "The Intercept",
@@ -140,6 +151,11 @@ module.exports = [
     text: "Unicorn Riot",
     xmlUrl: "http://www.unicornriot.ninja/?feed=rss2",
     htmlUrl: "http://www.unicornriot.ninja/",
+  },
+  {
+    text: "Unraveled",
+    xmlUrl: "https://unraveledpress.com/rss.xml",
+    htmlUrl: "https://unraveledpress.com/",
   },
   {
     text: "User Mag",

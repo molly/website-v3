@@ -1,0 +1,20 @@
+---
+permalink: /newsletters.opml.xml
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="1.0">
+
+  <head>
+    <title>Newsletter feeds for Molly White's blogroll</title>
+    <dateCreated>{{ page.date | dateToRfc822 }}</dateCreated>
+  </head>
+
+  <body>
+    <outline text="Newsletters" title="Newsletters">
+      {% for site in newslettersBlogroll|sortBlogs %}
+      <outline text="{{ site.text if site.text else site.author }}" title="{{ site.text if site.text else site.author }}"
+        type="rss" xmlUrl="{{ site.xmlUrl }}" htmlUrl="{{ site.htmlUrl }}" />
+      {% endfor %}
+    </outline>
+  </body>
+</opml>
