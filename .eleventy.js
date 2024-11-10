@@ -19,10 +19,8 @@ module.exports = function (eleventyConfig) {
     return posts.sort((a, b) => {
       const authorA = a.author || a.text;
       const authorB = b.author || b.text;
-      const textA = a.text;
-      const textB = b.text;
 
-      return textA.localeCompare(textB);
+      return authorA.localeCompare(authorB);
     });
   });
 
