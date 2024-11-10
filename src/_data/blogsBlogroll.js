@@ -501,7 +501,7 @@ module.exports = [
   {
     text: "The Handbasket",
     author: "Marisa Kabas",
-    tags: ["newsletter", "Substack"],
+    tags: ["news", "newsletter"],
     xmlUrl: "https://rss.beehiiv.com/feeds/40ZQ7CSldT.xml",
     htmlUrl: "https://www.thehandbasket.co/",
   },
