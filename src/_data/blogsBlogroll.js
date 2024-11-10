@@ -499,6 +499,13 @@ module.exports = [
     htmlUrl: "https://davekarpf.substack.com/",
   },
   {
+    text: "The Handbasket",
+    author: "Marisa Kabas",
+    tags: ["newsletter", "Substack"],
+    xmlUrl: "https://rss.beehiiv.com/feeds/40ZQ7CSldT.xml",
+    htmlUrl: "https://www.thehandbasket.co/",
+  },
+  {
     text: "The History of the Web",
     author: "Jay Hoffmann",
     tags: ["web"],
