@@ -24,8 +24,8 @@ module.exports = [
     author: "Anil Dash",
     authorWiki: "Anil Dash",
     tags: ["web"],
-    xmlUrl: "https://feeds.dashes.com/AnilDash",
-    htmlUrl: "https://dashes.com/anil/",
+    xmlUrl: "https://www.dashes.com/feed.xml",
+    htmlUrl: "https://www.dashes.com/posts/",
   },
   {
     author: "Aram Zucker-Scharff",
@@ -58,7 +58,6 @@ module.exports = [
     htmlUrl: "http://sassone.wordpress.com/",
   },
   {
-    text: "cabel.com",
     author: "Cabel Sasser",
     xmlUrl: "https://cabel.com/feed/",
     htmlUrl: "https://cabel.com",
@@ -82,7 +81,6 @@ module.exports = [
     htmlUrl: "http://danluu.com/",
   },
   {
-    text: "Dan York Media",
     author: "Dan York",
     xmlUrl: "https://danyork.me/feed/",
     htmlUrl: "https://danyork.me/",
@@ -111,14 +109,12 @@ module.exports = [
     htmlUrl: "https://disconnect.blog/",
   },
   {
-    text: "Doc Searls Weblog",
     author: "Doc Searls",
     authorWiki: "Doc Searls",
     xmlUrl: "https://doc.searls.com/feed/",
     htmlUrl: "https://doc.searls.com/",
   },
   {
-    text: "DSHR's Blog",
     author: "David S. H. Rosenthal",
     authorWiki: "David S. H. Rosenthal",
     tags: ["crypto", "technology"],
@@ -186,7 +182,6 @@ module.exports = [
     htmlUrl: "https://www.garbageday.email/",
   },
   {
-    text: "gilest.org",
     author: "Giles Turnbull",
     xmlUrl: "https://gilest.org/feed/index.xml",
     htmlUrl: "https://gilest.org/",
@@ -335,7 +330,6 @@ module.exports = [
     htmlUrl: "https://manuelmoreale.com/",
   },
   {
-    text: "Matthias Ott",
     author: "Matthias Ott",
     xmlUrl: "https://matthiasott.com/rss",
     htmlUrl: "https://matthiasott.com/",
@@ -363,7 +357,6 @@ module.exports = [
     htmlUrl: "https://buttondown.email/ownyourweb",
   },
   {
-    text: "Paul's Dev Notes",
     author: "Paul Frazee",
     tags: ["technology"],
     xmlUrl: "https://www.pfrazee.com/feed.xml",
@@ -403,13 +396,11 @@ module.exports = [
     htmlUrl: "https://buttondown.email/cassidoo",
   },
   {
-    text: "Richard Felix",
     author: "Richard Felix",
     xmlUrl: "https://richardfelix.com/feed.xml",
     htmlUrl: "https://richardfelix.com/",
   },
   {
-    text: "Ricky Mondello",
     author: "Ricky Mondello",
     xmlUrl: "https://rmondello.com/feed/",
     htmlUrl: "https://rmondello.com/",
