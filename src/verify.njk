@@ -8,18 +8,28 @@ path: "/verify"
 {% extends "layouts/with-nav.njk" %} {% block content %}
 <h1>Verify</h1>
 <p>
-  This page serves as the system of record for my online identity. The best places to follow me are:
+  This page serves as the system of record for my online identity. The best
+  places to follow me are:
 </p>
 <ul>
-  {% import "socialMacro.njk" as socialMacro %}
-  {% for link in verifyLinks | selectattr("active") %}
-  {{socialMacro.socialLink(link)}}
+  <li>Right here on this website (<a href="/rss">via RSS</a>)</li>
+  <li>
+    My newsletter:
+    <a href="https://www.citationneeded.news/">citationneeded.news</a>
+  </li>
+  {% import "socialMacro.njk" as socialMacro %} {% for link in verifyLinks |
+  selectattr("active") %}
+  {{
+    socialMacro.socialLink(link)
+  }}
   {% endfor %}
 </ul>
 <p>I also control the following personal accounts:</p>
 <ul>
   {% for link in verifyLinks | rejectattr("active") %}
-  {{ socialMacro.socialLink(link) }}
+  {{
+    socialMacro.socialLink(link)
+  }}
   {% endfor %}
 </ul>
 <p>
@@ -52,7 +62,9 @@ path: "/verify"
 <p>For my <i>Web3 is Going Great</i> project:</p>
 <ul>
   {% for link in w3iggSocialLinks %}
-  {{socialMacro.socialLink(link)}}
+  {{
+    socialMacro.socialLink(link)
+  }}
   {% endfor %}
 </ul>
 <p>
@@ -65,7 +77,9 @@ path: "/verify"
 <p>For my <i>Follow the Crypto</i> project:</p>
 <ul>
   {% for link in ftcSocialLinks %}
-  {{socialMacro.socialLink(link)}}
+  {{
+    socialMacro.socialLink(link)
+  }}
   {% endfor %}
 </ul>
 <p>I own and control the domain followthecrypto.org.</p>
