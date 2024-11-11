@@ -1,5 +1,11 @@
 module.exports = [
   {
+    text: "Newsletters",
+    author: "Newsletters",
+    xmlUrl: null,
+    htmlUrl: null,
+  },
+  {
     text: "A Very Good Blog",
     author: "Keenan",
     xmlUrl: "https://gkeenan.co/avgb/feed.xml",
@@ -21,11 +27,10 @@ module.exports = [
     htmlUrl: "https://aint.johnmark.org/",
   },
   {
+    text: "Anil Dash",
     author: "Anil Dash",
-    authorWiki: "Anil Dash",
-    tags: ["web"],
-    xmlUrl: "https://www.dashes.com/feed.xml",
-    htmlUrl: "https://www.dashes.com/posts/",
+    xmlUrl: "https://www.anildash.com/feed.xml",
+    htmlUrl: "https://anildash.com/",
   },
   {
     author: "Aram Zucker-Scharff",
@@ -33,7 +38,7 @@ module.exports = [
     htmlUrl: "https://aramzs.xyz/",
   },
   {
-    text: "BANNED IN YOUR STATE",
+    text: "Banned in Your State",
     author: "Laura Jedeed",
     tags: ["newsletter", "Substack"],
     xmlUrl: "https://www.bannedinyourstate.com/feed",
@@ -51,6 +56,14 @@ module.exports = [
     tags: ["newsletter"],
     xmlUrl: "https://birchtree.me/rss/",
     htmlUrl: "https://birchtree.me/",
+  },
+  {
+    text: "Blood in the Machine",
+    author: "Brian Merchant",
+    authorWiki: "Brian Merchant",
+    tags: ["newsletter", "Substack", "technology"],
+    xmlUrl: "https://www.bloodinthemachine.com/feed",
+    htmlUrl: "https://www.bloodinthemachine.com/",
   },
   {
     author: "Bob Sassone",
@@ -92,6 +105,12 @@ module.exports = [
     tags: ["high-volume", "news", "technology"],
     xmlUrl: "https://daringfireball.net/feeds/main",
     htmlUrl: "https://daringfireball.net/",
+  },
+  {
+    text: "deadSimpleTech",
+    author: "Iris Meredith",
+    xmlUrl: "https://deadsimpletech.com/rss",
+    htmlUrl: "https://deadsimpletech.com/",
   },
   {
     text: "Dirty Bubble Media",
@@ -328,6 +347,11 @@ module.exports = [
     author: "Manuel Moreale",
     xmlUrl: "https://manuelmoreale.com/feed/rss",
     htmlUrl: "https://manuelmoreale.com/",
+  },
+  {
+    author: "Mathew Ingram",
+    xmlUrl: "https://mathewingram.com/work/feed/",
+    htmlUrl: "https://mathewingram.com/work",
   },
   {
     author: "Matthias Ott",
