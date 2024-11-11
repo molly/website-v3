@@ -5,6 +5,7 @@ const data = [
     label: "Bluesky",
     href: "https://bsky.app/profile/molly.wiki",
     username: "@molly.wiki",
+    active: true,
   },
   {
     label: "Discord",
@@ -25,6 +26,7 @@ const data = [
     label: "Mastodon",
     href: "https://hachyderm.io/@molly0xfff",
     username: "@molly0xfff@hachyderm.io",
+    active: true,
   },
   {
     label: "Reddit",
@@ -35,11 +37,13 @@ const data = [
     label: "Threads",
     href: "https://www.threads.net/@molly0xfff",
     username: "molly0xfff",
+    active: true,
   },
   {
     label: "TikTok",
     href: "https://www.tiktok.com/@molly0xfff",
     username: "molly0xfff",
+    active: true,
   },
   {
     label: "Twitch",
@@ -55,6 +59,7 @@ const data = [
     label: "YouTube",
     href: "https://www.youtube.com/@molly0xfff",
     username: "molly0xfff",
+    active: true,
   },
 ];
 
