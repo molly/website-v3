@@ -1,6 +1,6 @@
 {% macro blogrollEntry(blog) %}
-<li>
-  <span class="h-card">
+<li  data-is-substack="{{'true' if blog.tags and 'Substack' in blog.tags else 'false'}}">
+  <span class="h-card" >
     {% if blog.author %}
       {% if blog.authorWiki %}
         <a href="https://en.wikipedia.org/wiki/{{ blog.authorWiki.replace(' ', '_') }}" class="u-url">
@@ -20,8 +20,10 @@
      (<a href="{{ blog.xmlUrl }}" class="u-url" rel="alternate">RSS</a>)
   </span>
   <span class="blog-tags">
-    {% for tag in blog.tags %}
-      <span class="blog-tag">{{ tag.replaceAll("-", " ") }}</span>
+    {% for tag in blog.tags|sort %}
+      {% if tag != 'Substack' %}
+        <span class="blog-tag{{ ' blog-tag-hidden' if tag == 'Substack'}}">{{ tag.replaceAll("-", " ") }}</span>
+      {% endif %}
     {% endfor %}
   </span>
 </li>

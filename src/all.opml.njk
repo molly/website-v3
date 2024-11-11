@@ -1,5 +1,13 @@
 ---
-permalink: /all.opml.xml
+permalink: /all{{pageState}}.opml.xml
+pagination:
+  data: pageStates
+  size: 1
+  alias: pageState
+  generatePageOnEmptyData: true
+pageStates:
+  -
+  - NoSubstack
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <opml version="1.0">

@@ -51,7 +51,7 @@ module.exports = [
   {
     text: "Horrific/Terrific",
     author: "Georgia Iacovou",
-    tags: ["Substack"],
+    tags: ["technology", "Substack"],
     xmlUrl: "https://www.horrific-terrific.tech/feed",
     htmlUrl: "https://www.horrific-terrific.tech",
   },
@@ -103,12 +103,6 @@ module.exports = [
     htmlUrl: "https://newsletter.squishy.computer/",
   },
   {
-    text: "Tedium",
-    author: "Ernie Smith",
-    xmlUrl: "https://feed.tedium.co/",
-    htmlUrl: "https://tedium.co/",
-  },
-  {
     text: "The Chancery Daily",
     tags: ["law", "Substack"],
     xmlUrl: "https://thechancerydaily.substack.com/feed",
@@ -139,6 +133,7 @@ module.exports = [
     text: "The Hypothesis",
     author: "Annalee Newitz",
     authorWiki: "Annalee Newitz",
+    tags: ["journalism"],
     xmlUrl: "https://buttondown.com/thehypothesis/rss",
     htmlUrl: "https://buttondown.com/thehypothesis",
   },
@@ -167,7 +162,8 @@ module.exports = [
   },
   {
     text: "The Torment Nexus",
-    author: "The Torment Nexus",
+    author: "Mathew Ingram",
+    tags: ["technology"],
     xmlUrl: "https://torment-nexus.mathewingram.com/rss/",
     htmlUrl: "https://torment-nexus.mathewingram.com/",
   },
@@ -188,7 +184,7 @@ module.exports = [
   {
     text: "Untangled",
     author: "Charley Johnson",
-    tags: ["technology"],
+    tags: ["technology", "Substack"],
     xmlUrl: "https://untangled.substack.com/feed",
     htmlUrl: "https://untangled.substack.com/",
   },

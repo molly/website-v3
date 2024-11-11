@@ -16,12 +16,13 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addFilter("sortBlogs", (posts) => {
-    return posts.sort((a, b) => {
-      const authorA = a.author || a.text;
-      const authorB = b.author || b.text;
+    return posts;
+    // return posts.sort((a, b) => {
+    //   const authorA = a.author || a.text;
+    //   const authorB = b.author || b.text;
 
-      return authorA.localeCompare(authorB);
-    });
+    //   return authorA.localeCompare(authorB);
+    // });
   });
 
   // Render CSS inline

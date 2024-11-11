@@ -1,6 +1,7 @@
 module.exports = [
   {
     text: "404 Media",
+    tags: ["technology"],
     xmlUrl: "https://www.404media.co/rss/",
     htmlUrl: "https://www.404media.co/",
   },
@@ -26,7 +27,7 @@ module.exports = [
     text: "Erin In The Morning",
     author: "Erin Reed",
     authorWiki: "Erin Reed (journalist)",
-    tags: ["LGBT"],
+    tags: ["LGBT", "Substack"],
     xmlUrl: "https://www.erininthemorning.com/feed",
     htmlUrl: "https://www.erininthemorning.com/",
   },
@@ -108,13 +109,14 @@ module.exports = [
   {
     text: "The Counteroffensive",
     author: "Tim Mak",
-    tags: ["Ukraine"],
+    tags: ["Ukraine", "Substack"],
     xmlUrl: "https://www.counteroffensive.news/feed",
     htmlUrl: "https://www.counteroffensive.news/",
   },
   {
     text: "The Future, Now and Then",
     author: "Dave Karpf",
+    tags: ["Substack"],
     xmlUrl: "https://davekarpf.substack.com/feed",
     htmlUrl: "https://davekarpf.substack.com/",
   },
@@ -144,6 +146,7 @@ module.exports = [
     text: "The Present Age",
     author: "Parker Molloy",
     authorWiki: "Parker Molloy",
+    tags: ["Substack"],
     xmlUrl: "https://www.readtpa.com/feed",
     htmlUrl: "https://www.readtpa.com/",
   },
@@ -161,6 +164,7 @@ module.exports = [
     text: "User Mag",
     author: "Taylor Lorenz",
     authorWiki: "Taylor Lorenz",
+    tags: ["Substack"],
     xmlUrl: "https://www.usermag.co/feed",
     htmlUrl: "https://www.usermag.co/",
   },

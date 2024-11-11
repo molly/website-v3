@@ -5,8 +5,7 @@ page_class: "blogroll"
 path: "/blogroll"
 ---
 
-{% extends "layouts/with-nav.njk" %}
-{% block content %}
+{% extends "layouts/with-nav.njk" %} {% block content %}
 <h1>Blogroll</h1>
 <p>
   This is an incomplete list of some of the blogs, newsletters, and news sites I
@@ -18,31 +17,43 @@ path: "/blogroll"
   >
   download and import the corresponding OPML file. You can also
   <a href="/all.opml.xml">subscribe to the whole bunch</a>, but please note that
-  this is a bit of a firehose — you might prefer to pick and choose from the list!
+  this is a bit of a firehose — you might prefer to pick and choose from the
+  list!
 </p>
 
+<p class="hide-toggle">
+  <input type="checkbox" id="toggle-substack" />
+  <label for="toggle-substack">Omit Substack Blogs</label
+  ><sup><a href="#footnote2">2</a></sup>
+</p>
 <h2>Blogs</h2>
-(<a href="/blogs.opml.xml">OPML</a>)
+(<a class="opml-link" href="/blogs.opml.xml">OPML</a>)
 <ul class="blog-list">
-  {% import "blogrollMacro.njk" as blogrollMacro %}
-  {% for blog in blogsBlogroll|sortBlogs %}
-    {{blogrollMacro.blogrollEntry(blog)}}
+  {% import "blogrollMacro.njk" as blogrollMacro %} {% for blog in
+  blogsBlogroll|sortBlogs %}
+  {{
+    blogrollMacro.blogrollEntry(blog)
+  }}
   {% endfor %}
 </ul>
 
 <h2>News</h2>
-(<a href="/news.opml.xml">OPML</a>)
+(<a class="opml-link" href="/news.opml.xml">OPML</a>)
 <ul class="blog-list">
   {% for blog in newsBlogroll|sortBlogs %}
-    {{blogrollMacro.blogrollEntry(blog)}}
+  {{
+    blogrollMacro.blogrollEntry(blog)
+  }}
   {% endfor %}
 </ul>
 
 <h2>Newsletters</h2>
-(<a href="/newsletters.opml.xml">OPML</a>)
+(<a class="opml-link" href="/newsletters.opml.xml">OPML</a>)
 <ul class="blog-list">
   {% for blog in newslettersBlogroll|sortBlogs %}
-    {{blogrollMacro.blogrollEntry(blog)}}
+  {{
+    blogrollMacro.blogrollEntry(blog)
+  }}
   {% endfor %}
 </ul>
 
@@ -50,6 +61,18 @@ path: "/blogroll"
   <sup>
     <a id="footnote1">[1]</a>
   </sup>
-  I use <a href="https://www.inoreader.com">Inoreader</a>.
+  I use <a href="https://www.inoreader.com">Inoreader</a>.<br />
+  <sup>
+    <a id="footnote2">[2]</a>
+  </sup>
+  I know some prefer not to follow blogs on Substack due to some of the
+  company's
+  <a href="https://www.citationneeded.news/substackers-against-nazis/"
+    >practices</a
+  >. Checking this box will remove Substacks from the list and from the OPML
+  files.
 </p>
+{% endblock %} {% block js %}
+{{ super() }}
+<script src="/assets/js/blogroll.js"></script>
 {% endblock %}

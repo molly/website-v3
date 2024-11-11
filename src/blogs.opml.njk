@@ -1,5 +1,13 @@
 ---
-permalink: /blogs.opml.xml
+permalink: /blogs{{pageState}}.opml.xml
+pagination:
+  data: pageStates
+  size: 1
+  alias: pageState
+  generatePageOnEmptyData: true
+pageStates:
+  -
+  - NoSubstack
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <opml version="1.0">
@@ -12,8 +20,10 @@ permalink: /blogs.opml.xml
   <body>
     <outline text="Blogs" title="Blogs">
       {% for site in blogsBlogroll|sortBlogs %}
+        {% if site.tags and 'Substack' not in site.tags or pageState != 'NoSubstack' %}
       <outline text="{{ site.text if site.text else site.author }}" title="{{ site.text if site.text else site.author }}"
         type="rss" xmlUrl="{{ site.xmlUrl }}" htmlUrl="{{ site.htmlUrl }}" />
+        {% endif %}
       {% endfor %}
     </outline>
   </body>

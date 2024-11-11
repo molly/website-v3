@@ -294,6 +294,10 @@ hr {
       width: 100%;
       display: flex;
       justify-content: space-between;
+
+      &.hidden {
+        display: none;
+      }
     }
   }
 
@@ -309,6 +313,10 @@ hr {
         content: "#";
       }
     }
+  }
+
+  .hide-toggle {
+    font-size: 80%;
   }
 }
 
