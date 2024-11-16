@@ -3,6 +3,10 @@ const socialLinks = require("./socialLinks");
 
 const verifyLinks = [
   {
+    label: "Etsy",
+    href: "https://www.etsy.com/shop/mollywhitestore",
+  },
+  {
     label: "Github",
     username: "molly",
     href: "https://github.com/molly",
