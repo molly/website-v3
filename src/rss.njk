@@ -5,14 +5,14 @@ page_class: "rss"
 path: "/rss"
 ---
 
-{% extends "layouts/with-nav.njk" %}
-{% block content %}
-You can follow this
+{% extends "layouts/with-nav.njk" %} {% block content %} You can follow this
 website in your RSS reader by subscribing to
 <b><a href="https://www.mollywhite.net/feed/feed.xml">/feed/feed.xml</a></b
 >, which contains everything that shows up in the
-<a href="/feed">activity feed</a>. This includes <a href="/micro">microblog posts</a>, the <a href="/reading">reading
-list</a> entries that I choose to post to the feed, and
+<a href="/feed">activity feed</a>. This includes
+<a href="/micro">microblog posts</a>, the
+<a href="/reading">reading list</a> entries that I choose to post to the feed,
+and
 <a href="https://www.citationneeded.news/"><i>Citation&nbsp;Needed</i></a>
 posts.
 
@@ -43,21 +43,15 @@ posts.
   </div>
 </div>
 
-<h3>Reading lists</h3>
-<div>
-  These feeds contain all of my
-  <a href="https://www.mollywhite.net/reading">reading list</a> entries,
-  including those that don't show up in the activity feed.
+<div class="feed-group">
+  <div>
+    <a href="https://www.mollywhite.net/reading/feed.xml">Reading list posts</a>
+  </div>
+  <div class="description">
+    All of my
+    <a href="https://www.mollywhite.net/reading">reading list</a> entries,
+    including those that don't show up in the activity feed.
+  </div>
 </div>
-<ul>
-  <li>
-    <a href="https://www.mollywhite.net/reading/shortform/feed.xml"
-      >Shortform</a
-    >
-  </li>
-  <li>
-    <a href="https://www.mollywhite.net/reading/blockchain">Blockchain</a>
-  </li>
-</ul>
 
 {% endblock %}
