@@ -5,7 +5,9 @@
 
   .graphics-wrapper {
     margin-bottom: 50px;
+    width: 100%;
   }
+
   .legend {
     width: 250px;
 
@@ -13,9 +15,12 @@
       width: 100%;
     }
   }
-  .contagion {
+
+  .contagion,
+  .trump-family-crypto-projects {
     min-width: 1000px;
   }
+
   @media screen and (min-width: 1201px) {
     .graphics-wrapper {
       position: relative;
