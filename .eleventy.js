@@ -16,13 +16,23 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addFilter("sortBlogs", (posts) => {
-    return posts;
-    // return posts.sort((a, b) => {
-    //   const authorA = a.author || a.text;
-    //   const authorB = b.author || b.text;
+    const getAuthor = (post) => {
+      if (post.author) {
+        const name = post.author.replace(/( Jr\.?| Sr\.?| III?)$/, "");
+        const lastName = name.split(" ").pop();
+        return lastName.toLowerCase();
+      } else if (post.text) {
+        const name = post.text.replace(/^The\s+/i, "");
+        return name.toLowerCase();
+      }
+    };
 
-    //   return authorA.localeCompare(authorB);
-    // });
+    return posts.sort((a, b) => {
+      const authorA = getAuthor(a);
+      const authorB = getAuthor(b);
+
+      return authorA.localeCompare(authorB);
+    });
   });
 
   // Render CSS inline

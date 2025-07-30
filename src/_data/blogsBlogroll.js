@@ -52,14 +52,6 @@ module.exports = [
     htmlUrl: "https://birchtree.me/",
   },
   {
-    text: "Blood in the Machine",
-    author: "Brian Merchant",
-    authorWiki: "Brian Merchant",
-    tags: ["Substack", "technology"],
-    xmlUrl: "https://www.bloodinthemachine.com/feed",
-    htmlUrl: "https://www.bloodinthemachine.com/",
-  },
-  {
     author: "Bob Sassone",
     xmlUrl: "https://sassone.wordpress.com/feed/",
     htmlUrl: "http://sassone.wordpress.com/",
@@ -88,6 +80,12 @@ module.exports = [
     htmlUrl: "http://danluu.com/",
   },
   {
+    author: "Dan Sinker",
+    authorWiki: "Dan Sinker",
+    xmlUrl: "https://dansinker.com/feed.xml",
+    htmlUrl: "https://dansinker.com/",
+  },
+  {
     author: "Dan York",
     xmlUrl: "https://danyork.me/feed/",
     htmlUrl: "https://danyork.me/",
@@ -113,14 +111,6 @@ module.exports = [
     tags: ["crypto", "Substack"],
     xmlUrl: "https://www.dirtybubblemedia.com/feed",
     htmlUrl: "https://www.dirtybubblemedia.com/",
-  },
-  {
-    text: "Disconnect",
-    author: "Paris Marx",
-    authorWiki: "Paris Marx",
-    tags: ["technology"],
-    xmlUrl: "https://disconnect.blog/rss/",
-    htmlUrl: "https://disconnect.blog/",
   },
   {
     author: "Doc Searls",
@@ -163,12 +153,6 @@ module.exports = [
     text: "fLaMEdFURY",
     xmlUrl: "https://flamedfury.com/feed.xml",
     htmlUrl: "https://flamedfury.com/posts/",
-  },
-  {
-    text: "Flaming Hydra",
-    tags: ["high-volume", "news"],
-    xmlUrl: "https://flaminghydra.com/rss/",
-    htmlUrl: "https://flaminghydra.com/",
   },
   {
     text: "FlowingData",
@@ -252,12 +236,6 @@ module.exports = [
     htmlUrl: "https://jamesg.blog/",
   },
   {
-    text: "@Westenberg",
-    author: "Joan Westenberg",
-    xmlUrl: "https://www.joanwestenberg.com/rss/",
-    htmlUrl: "https://www.joanwestenberg.com/",
-  },
-  {
     author: "Josh Collinsworth",
     tags: ["technology"],
     xmlUrl: "https://joshcollinsworth.com/rss",
@@ -268,6 +246,11 @@ module.exports = [
     tags: ["technology"],
     xmlUrl: "https://hamatti.org/feed/feed.xml",
     htmlUrl: "https://hamatti.org/blog/",
+  },
+  {
+    author: "Justin Cox",
+    xmlUrl: "https://justincox.com/rss/",
+    htmlUrl: "https://justincox.com/",
   },
   {
     author: "Justin Pot",
@@ -364,12 +347,23 @@ module.exports = [
     htmlUrl: "https://lyz.substack.com/",
   },
   {
+    author: "Micah Lee",
+    xmlUrl: "https://micahflee.com/rss/",
+    htmlUrl: "https://micahflee.com/",
+  },
+  {
     text: "ongoing",
     author: "Tim Bray",
     authorWiki: "Tim Bray",
     tags: ["indieweb"],
     xmlUrl: "https://www.tbray.org/ongoing/ongoing.atom",
     htmlUrl: "https://www.tbray.org/ongoing/",
+  },
+  {
+    text: "Organizing My Thoughts",
+    author: "Kelly Hayes",
+    xmlUrl: "https://organizingmythoughts.org/rss/",
+    htmlUrl: "https://organizingmythoughts.org/",
   },
   {
     text: "Own Your Web",
@@ -444,14 +438,6 @@ module.exports = [
     htmlUrl: "https://www.hanselman.com/blog/",
   },
   {
-    text: "Scripting News",
-    author: "Dave Winer",
-    authorWiki: "Dave Winer",
-    tags: ["high-volume"],
-    xmlUrl: "http://scripting.com/rss.xml",
-    htmlUrl: "http://scripting.com/",
-  },
-  {
     text: "Sentencing Law and Policy",
     author: "Douglas A. Berman",
     tags: ["law"],
@@ -499,12 +485,6 @@ module.exports = [
     tags: ["indieweb"],
     xmlUrl: "https://tantek.com/updates.atom",
     htmlUrl: "https://tantek.com/",
-  },
-  {
-    text: "Techdirt",
-    tags: ["high-volume", "law", "news", "technology"],
-    xmlUrl: "https://www.techdirt.com/techdirt_rss.xml",
-    htmlUrl: "https://www.techdirt.com/",
   },
   {
     text: "Tedium",
@@ -586,6 +566,12 @@ module.exports = [
     tags: ["web"],
     xmlUrl: "https://waxy.org/feed/",
     htmlUrl: "https://waxy.org",
+  },
+  {
+    text: "Westenberg",
+    author: "Joan Westenberg",
+    xmlUrl: "https://rss.beehiiv.com/feeds/IDFzfYwUH1.xml",
+    htmlUrl: "https://westenberg.beehiiv.com/",
   },
   {
     text: "Writings and rehearsals by Nathan Schneider",

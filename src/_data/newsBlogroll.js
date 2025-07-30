@@ -18,10 +18,22 @@ module.exports = [
     htmlUrl: "http://www.bleepingcomputer.com/forums/f/2/news/",
   },
   {
+    text: "Court Watch",
+    author: "Seamus Hughes",
+    tags: ["Substack", "law"],
+    xmlUrl: "https://seamushughes.substack.com/feed",
+    htmlUrl: "https://seamushughes.substack.com/",
+  },
+  {
     text: "Defector",
     tags: ["sports"],
     xmlUrl: "https://defector.com/feed",
     htmlUrl: "https://defector.com/",
+  },
+  {
+    text: "Democracy Docket",
+    xmlUrl: "https://www.democracydocket.com/feed/",
+    htmlUrl: "https://www.democracydocket.com/",
   },
   {
     text: "Erin In The Morning",
@@ -35,11 +47,6 @@ module.exports = [
     text: "Fix The News",
     xmlUrl: "https://fixthenews.com/rss/",
     htmlUrl: "https://fixthenews.com/",
-  },
-  {
-    text: "Flaming Hydra",
-    xmlUrl: "https://flaminghydra.com/rss/",
-    htmlUrl: "https://flaminghydra.com/",
   },
   {
     text: "It's Going Down",
@@ -68,6 +75,11 @@ module.exports = [
     htmlUrl: "https://www.technologyreview.com/stream/?sort=recent",
   },
   {
+    text: "NOTUS",
+    xmlUrl: "https://www.notus.org/all-notus-stories.rss",
+    htmlUrl: "https://www.notus.org/all-notus-stories",
+  },
+  {
     text: "OpenSecrets Blog",
     xmlUrl: "https://www.opensecrets.org/news/feed",
     htmlUrl: "https://www.opensecrets.org/news",
@@ -84,6 +96,17 @@ module.exports = [
     htmlUrl: "https://www.propublica.org/",
   },
   {
+    text: "Rascal News",
+    tags: ["games"],
+    xmlUrl: "https://www.rascal.news/rss/",
+    htmlUrl: "https://rascal.news/",
+  },
+  {
+    text: "Rest of World",
+    xmlUrl: "https://restofworld.org/feed/latest",
+    htmlUrl: "https://restofworld.org/",
+  },
+  {
     text: "SCOTUSblog",
     tags: ["law"],
     xmlUrl: "https://www.scotusblog.com/feed/",
@@ -93,7 +116,7 @@ module.exports = [
     text: "Tech Policy Press",
     tags: ["technology"],
     xmlUrl: "https://www.techpolicy.press/rss/feed.xml",
-    htmlUrl: "https://techpolicy.vercel.app/",
+    htmlUrl: "https://www.techpolicy.press/",
   },
   {
     text: "Techdirt",
@@ -122,8 +145,8 @@ module.exports = [
   },
   {
     text: "The Intercept",
-    xmlUrl: "https://firstlook.org/theintercept/feed/",
-    htmlUrl: "https://firstlook.org/theintercept",
+    xmlUrl: "https://theintercept.com/feed/?lang=en",
+    htmlUrl: "https://theintercept.com/",
   },
   {
     text: "The Maine Monitor",
@@ -151,6 +174,11 @@ module.exports = [
     htmlUrl: "https://www.readtpa.com/",
   },
   {
+    text: "The TRiiBE",
+    xmlUrl: "https://thetriibe.com/feed/",
+    htmlUrl: "https://thetriibe.com/",
+  },
+  {
     text: "Unicorn Riot",
     xmlUrl: "http://www.unicornriot.ninja/?feed=rss2",
     htmlUrl: "http://www.unicornriot.ninja/",
@@ -159,13 +187,5 @@ module.exports = [
     text: "Unraveled",
     xmlUrl: "https://unraveledpress.com/rss.xml",
     htmlUrl: "https://unraveledpress.com/",
-  },
-  {
-    text: "User Mag",
-    author: "Taylor Lorenz",
-    authorWiki: "Taylor Lorenz",
-    tags: ["Substack"],
-    xmlUrl: "https://www.usermag.co/feed",
-    htmlUrl: "https://www.usermag.co/",
   },
 ];

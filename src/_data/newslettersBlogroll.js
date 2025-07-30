@@ -1,5 +1,11 @@
 module.exports = [
   {
+    text: "Assigned Media",
+    tags: ["LGBT"],
+    xmlUrl: "https://www.assignedmedia.org/breaking-news?format=rss",
+    htmlUrl: "https://www.assignedmedia.org/",
+  },
+  {
     text: "Banned In Your State",
     author: "Laura Jedeed",
     tags: ["Substack"],
@@ -7,12 +13,25 @@ module.exports = [
     htmlUrl: "https://www.bannedinyourstate.com/",
   },
   {
+    author: "Matt Birchler",
+    text: "BirchTree",
+    xmlUrl: "https://birchtree.me/rss/",
+    htmlUrl: "https://birchtree.me/",
+  },
+  {
     text: "Blood in the Machine",
     author: "Brian Merchant",
     authorWiki: "Brian Merchant",
-    tags: ["technology", "Substack"],
+    tags: ["Substack", "technology"],
     xmlUrl: "https://www.bloodinthemachine.com/feed",
     htmlUrl: "https://www.bloodinthemachine.com/",
+  },
+  {
+    text: "Court Watch",
+    author: "Seamus Hughes",
+    tags: ["Substack", "law"],
+    xmlUrl: "https://seamushughes.substack.com/feed",
+    htmlUrl: "https://seamushughes.substack.com/",
   },
   {
     text: "Dirty Bubble Media",
@@ -25,9 +44,9 @@ module.exports = [
     text: "Disconnect",
     author: "Paris Marx",
     authorWiki: "Paris Marx",
-    tags: ["technology"],
-    xmlUrl: "https://disconnect.blog/rss/",
-    htmlUrl: "https://disconnect.blog/",
+    tags: ["technology", "Substack"],
+    xmlUrl: "https://www.disconnect.blog/feed",
+    htmlUrl: "https://www.disconnect.blog/",
   },
   {
     text: "Where's Your Ed At",
@@ -35,11 +54,6 @@ module.exports = [
     tags: ["technology"],
     xmlUrl: "https://www.wheresyoured.at/rss/",
     htmlUrl: "https://www.wheresyoured.at/",
-  },
-  {
-    text: "Flaming Hydra",
-    xmlUrl: "https://flaminghydra.com/rss/",
-    htmlUrl: "https://flaminghydra.com/",
   },
   {
     text: "Garbage Day",
@@ -56,12 +70,6 @@ module.exports = [
     htmlUrl: "https://www.horrific-terrific.tech",
   },
   {
-    text: "@Westenberg",
-    author: "Joan Westenberg",
-    xmlUrl: "https://www.joanwestenberg.com/rss/",
-    htmlUrl: "https://www.joanwestenberg.com/",
-  },
-  {
     text: "Law Dork",
     author: "Chris Geidner",
     authorWiki: "Chris Geidner",
@@ -71,7 +79,8 @@ module.exports = [
   },
   {
     text: "Men Yell at Me",
-    author: "Liz Lenz",
+    author: "Lyz Lenz",
+    authorWiki: "Lyz Lenz",
     tags: ["Substack"],
     xmlUrl: "https://lyz.substack.com/feed",
     htmlUrl: "https://lyz.substack.com/",
@@ -84,7 +93,16 @@ module.exports = [
     htmlUrl: "https://mindandiron.substack.com/",
   },
   {
+    text: "Perfect Sentences",
+    author: "Ingrid Burrington",
+    authorWiki: "Ingrid Burrington",
+    xmlUrl: "https://buttondown.com/perfectsentences/rss",
+    htmlUrl: "https://buttondown.com/perfectsentences",
+  },
+  {
     text: "Popular Information",
+    author: "Judd Legum",
+    authorWiki: "Judd Legum",
     tags: ["Substack"],
     xmlUrl: "https://popular.info/feed",
     htmlUrl: "https://popular.info/",
@@ -97,10 +115,22 @@ module.exports = [
     htmlUrl: "https://maxread.substack.com/",
   },
   {
+    text: "Serious Trouble",
+    tags: ["law", "Substack", "podcast"],
+    xmlUrl: "https://www.serioustrouble.show/feed",
+    htmlUrl: "https://www.serioustrouble.show/",
+  },
+  {
     text: "Squishy Computer",
     tags: ["technology", "Substack"],
     xmlUrl: "https://newsletter.squishy.computer/feed",
     htmlUrl: "https://newsletter.squishy.computer/",
+  },
+  {
+    text: "Tedium",
+    author: "Ernie Smith",
+    xmlUrl: "https://feed.tedium.co/",
+    htmlUrl: "https://tedium.co/",
   },
   {
     text: "The Chancery Daily",
@@ -126,6 +156,7 @@ module.exports = [
   {
     text: "The Handbasket",
     author: "Marisa Kabas",
+    authorWiki: "Marisa Kabas",
     xmlUrl: "https://rss.beehiiv.com/feeds/40ZQ7CSldT.xml",
     htmlUrl: "https://www.thehandbasket.co/",
   },
@@ -154,6 +185,12 @@ module.exports = [
     htmlUrl: "https://www.readtpa.com/",
   },
   {
+    text: "The Rage",
+    tags: ["crypto"],
+    xmlUrl: "https://www.therage.co/rss/",
+    htmlUrl: "https://www.therage.co/",
+  },
+  {
     text: "The Sword And the Sandwich",
     author: "Talia Lavin",
     authorWiki: "Talia Lavin",
@@ -161,11 +198,11 @@ module.exports = [
     htmlUrl: "https://buttondown.com/theswordandthesandwich",
   },
   {
-    text: "The Torment Nexus",
-    author: "Mathew Ingram",
-    tags: ["technology"],
-    xmlUrl: "https://torment-nexus.mathewingram.com/rss/",
-    htmlUrl: "https://torment-nexus.mathewingram.com/",
+    text: "The Tech Bubble",
+    author: "Edward Ongweso Jr.",
+    tags: ["Substack", "technology"],
+    xmlUrl: "https://thetechbubble.substack.com/feed",
+    htmlUrl: "https://thetechbubble.substack.com/",
   },
   {
     text: "The Wikipedian",
@@ -187,5 +224,13 @@ module.exports = [
     tags: ["technology", "Substack"],
     xmlUrl: "https://untangled.substack.com/feed",
     htmlUrl: "https://untangled.substack.com/",
+  },
+  {
+    text: "User Mag",
+    author: "Taylor Lorenz",
+    authorWiki: "Taylor Lorenz",
+    tags: ["Substack"],
+    xmlUrl: "https://www.usermag.co/feed",
+    htmlUrl: "https://www.usermag.co/",
   },
 ];
