@@ -188,4 +188,9 @@ module.exports = [
     xmlUrl: "https://unraveledpress.com/rss.xml",
     htmlUrl: "https://unraveledpress.com/",
   },
+  {
+    text: "Wired",
+    xmlUrl: "https://www.wired.com/feed/rss",
+    htmlUrl: "https://www.wired.com/",
+  },
 ];
