@@ -37,13 +37,11 @@ const data = [
     label: "Threads",
     href: "https://www.threads.net/@molly0xfff",
     username: "molly0xfff",
-    active: true,
   },
   {
     label: "TikTok",
     href: "https://www.tiktok.com/@molly0xfff",
     username: "molly0xfff",
-    active: true,
   },
   {
     label: "Twitch",
