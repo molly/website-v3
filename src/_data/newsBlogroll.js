@@ -20,9 +20,9 @@ module.exports = [
   {
     text: "Court Watch",
     author: "Seamus Hughes",
-    tags: ["Substack", "law"],
-    xmlUrl: "https://seamushughes.substack.com/feed",
-    htmlUrl: "https://seamushughes.substack.com/",
+    tags: ["law"],
+    xmlUrl: "https://rss.beehiiv.com/feeds/BTVqUNjsIO.xml",
+    htmlUrl: "https://www.courtwatch.news/",
   },
   {
     text: "Defector",
