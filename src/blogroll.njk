@@ -6,8 +6,10 @@ path: "/blogroll"
 ---
 
 {% extends "layouts/with-nav.njk" %} {% block content %}
-<h1>Blogroll</h1>
-<p>
+<header class="page-head">
+<p class="page-label">About</p>
+<h1 class="page-title-large">Blogroll</h1>
+<p class="page-intro">
   This is an incomplete list of some of the blogs, newsletters, and news sites I
   like to read. They change often. The lists overlap somewhat.
 </p>
@@ -20,6 +22,7 @@ path: "/blogroll"
   this is a bit of a firehose — you might prefer to pick and choose from the
   list!
 </p>
+</header>
 
 <p class="hide-toggle">
   <input type="checkbox" id="toggle-substack" />

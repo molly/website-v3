@@ -45,13 +45,10 @@ module.exports = function (eleventyConfig) {
       require("autoprefixer"),
       require("cssnano"),
     ])
-      .process(css, { from: filepath })
-      .then((result) => {
-        return result.css;
-      })
-      .catch((err) => {
-        console.error(err);
-      });
+      // Parse as SCSS, so "//" comments (and apostrophes in them) reach Sass intact
+      .process(css, { from: filepath, syntax: require("postcss-scss") })
+      // A CSS error fails the build rather than publishing an empty stylesheet
+      .then((result) => result.css);
   });
 
   eleventyConfig.setNunjucksEnvironmentOptions({
