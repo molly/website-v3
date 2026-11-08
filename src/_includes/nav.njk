@@ -1,117 +1,51 @@
-{# The site header: wordmark, the main pages, and Menu for everything else. #}
-{% set navLinks = [
-  { key: "/", href: "/", text: "Home" },
-  { key: "/feed", href: "/feed", text: "Feed" },
-  { key: "/about", href: "/about", text: "About" },
-  { key: "/support", href: "/support", text: "Support" }
-] %}
+{# The site header: the wordmark, one row of the main pages, and the Menu button, with the Menu
+   below them. The pages are in _data/siteNav.js, which says which links drop out at which widths
+   and which top-level page is underlined for a page that isn't in the bar. The dynamic site's
+   pug/templates/includes/siteHeader.pug and siteMenu.pug have the same markup. #}
+{% set nav = siteNav.navState(page.url.split("/")[1] or "home") %}
+
+{% macro menuLink(link, current) %}
+  {% set here = link.key and link.key == current %}
+  <a href="{{ link.href }}"{% if link.italic or link.me %} class="u-url{% if here %} site-menu-here{% endif %}"{% elif here %} class="site-menu-here"{% endif %}{% if link.me %} rel="me"{% endif %}{% if here %} aria-current="page"{% endif %}>{% if link.italic %}<i>{{ link.text }}</i>{% else %}{{ link.text }}{% endif %}</a>
+  {%- if here %}<span class="site-menu-here-note"> · you’re here</span>{% endif %}
+{% endmacro %}
+
 <header class="site-header" data-nosnippet>
-  <a class="site-wordmark-small" href="/">Molly White</a>
-  <nav class="site-nav" aria-label="Main">
-    <ul>
-      {% for link in navLinks %}
-      <li><a href="{{ link.href }}"{% if link.key != "/" and page.url.startsWith(link.key) %} aria-current="page"{% endif %}>{{ link.text }}</a></li>
+  <div class="site-header-bar">
+    <a class="site-wordmark-small" href="/">Molly White</a>
+    <nav class="site-nav" aria-label="Main">
+      <ul>
+        {% for link in siteNav.bar %}
+        <li{% if link.from %} class="site-nav-from-{{ link.from }}"{% endif %}>
+          <a href="{{ link.href }}"{% if nav.current == link.key %} aria-current="page"{% endif %}{% if nav.parent == link.key %} class="site-nav-parent site-nav-parent-{{ nav.parentFrom }}"{% endif %}>{{ link.text }}</a>
+        </li>
+        {% endfor %}
+        <li>
+          <button id="site-menu-button" class="site-menu-button" type="button" aria-expanded="false" aria-controls="site-menu">
+            <span class="site-menu-button-closed"><svg viewBox="0 0 12 12" width="10" height="10" aria-hidden="true"><path d="M1 3h10M1 6h10M1 9h10" stroke="currentColor" stroke-width="1.3"/></svg> Menu</span>
+            <span class="site-menu-button-open"><svg viewBox="0 0 12 12" width="9" height="9" aria-hidden="true"><path d="M2 2l8 8M10 2l-8 8" stroke="currentColor" stroke-width="1.5"/></svg> Close</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  {# The Menu: every page, opened by the Menu button, pushing the page down #}
+  <div id="site-menu" class="site-menu" hidden>
+    {% for group in siteNav.menu %}
+    <ul class="site-menu-group">
+      {% for top in group %}
+      <li class="site-menu-top">
+        {{ menuLink(top, nav.current) }}
+        {% if top.children %}
+        <ul class="site-menu-children">
+          {% for child in top.children %}
+          <li>{{ menuLink(child, nav.current) }}</li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+      </li>
       {% endfor %}
-      <li>
-        <button id="site-menu-button" class="site-menu-button" type="button" aria-expanded="false" aria-controls="site-menu">
-          <svg viewBox="0 0 12 12" width="10" height="10" aria-hidden="true"><path d="M1 3h10M1 6h10M1 9h10" stroke="currentColor" stroke-width="1.3"/></svg>
-          Menu
-        </button>
-      </li>
     </ul>
-    <div id="site-menu" class="site-menu" hidden>
-    <ul>
-      <li class="nav-header">Work</li>
-      <li>
-        <a class="u-url" href="https://www.citationneeded.news/"
-          ><i>Citation Needed</i> newsletter</a
-        >
-      </li>
-      <li>
-        <a class="u-url" href="https://www.web3isgoinggreat.com/">
-          <i>Web3 is Going Just Great</i>
-        </a>
-      </li>
-      <li>
-        <a class="u-url" href="https://influence.citationneeded.news/">
-          <i>Tech Influence Watch</i>
-        </a>
-      </li>
-      <li>
-        <a href="/freelance">Freelance writing</a>
-      </li>
-      <li>
-        <a href="https://blog.mollywhite.net/blockchain/">Blockchain essays</a>
-      </li>
-      <li>
-        <a href="/speaking">Speaking</a>
-      </li>
-      <li>
-        <a href="/press">Press</a>
-      </li>
-    </ul>
-    <ul>
-      <li class="nav-header">Support</li>
-      <li>
-        <a href="/support">Support my work</a>
-      </li>
-      <li>
-        <a href="https://store.mollywhite.net">Store</a>
-      </li>
-    </ul>
-    <ul>
-      <li class="nav-header">About</li>
-      <li>
-        <a href="/contact">Contact</a>
-      </li>
-      <li>
-        <a href="/verify">Identity</a>
-      </li>
-      <li>
-        <a href="/resume">Resumé</a>
-      </li>
-    </ul>
-    <ul>
-      <li class="nav-header">Other interests</li>
-      <li>
-        <a href="/reading">Reading lists</a>
-      </li>
-      <li>
-        <a href="/blogroll">Blogroll</a>
-      </li>
-      <li>
-        <a href="/projects">Software</a>
-      </li>
-    </ul>
-    <ul>
-      <li class="nav-header">Social</li>
-      <li>
-        <a href="/micro">Microblog</a>
-      </li>
-      <li>
-        <a class="u-url" href="https://bsky.app/profile/molly.wiki" rel="me"
-          >Bluesky</a
-        >
-      </li>
-      <li>
-        <a class="u-url" href="https://x.com/molly0xFFF" rel="me"
-          >Twitter</a
-        >
-      </li>
-      <li>
-        <a class="u-url" href="https://hachyderm.io/@molly0xfff" rel="me"
-          >Mastodon</a
-        >
-      </li>
-      <li>
-        <a class="u-url" href="https://www.youtube.com/@molly0xfff" rel="me"
-          >YouTube</a
-        >
-      </li>
-      <li>
-        <a href="/social">Everything else</a>
-      </li>
-    </ul>
-    </div>
-  </nav>
+    {% endfor %}
+  </div>
 </header>

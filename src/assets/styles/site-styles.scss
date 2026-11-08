@@ -87,10 +87,11 @@ hr {
 
 // Header and nav ---------------------------------------------------------------------------------
 
-.site-header {
-  position: relative;
+/* The header bar: one row at every width, the wordmark then the main pages and the Menu button
+   (nav.njk). The Menu opens below it and pushes the page down. Kept in step with the dynamic
+   site (css/site.css). */
+.site-header-bar {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
@@ -107,30 +108,56 @@ hr {
 
 .site-nav > ul {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
-  gap: 0.35rem 1.1rem;
+  gap: 1.1rem;
   margin: 0;
   padding: 0;
   list-style: none;
+  white-space: nowrap;
 }
 
 .site-nav > ul a {
   font-size: 1rem;
   text-decoration: none;
+}
 
-  &[aria-current="page"] {
-    color: var(--accent);
-    text-decoration: underline;
-    text-decoration-thickness: 1.5px;
-    text-underline-offset: 0.3em;
+/* The page you are on, or the top-level page it is under where its own link is not shown */
+@mixin nav-current {
+  color: var(--accent);
+  text-decoration: underline;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 0.3em;
+}
+
+.site-nav a[aria-current="page"],
+.site-nav a.site-nav-parent-always {
+  @include nav-current;
+}
+
+/* Links drop out at fixed widths; the Menu still has them (_data/siteNav.js) */
+@media (max-width: 1239.98px) {
+  .site-nav-from-desktop {
+    display: none;
+  }
+
+  .site-nav a.site-nav-parent-narrow {
+    @include nav-current;
+  }
+}
+
+@media (max-width: 639.98px) {
+  .site-nav-from-tablet {
+    display: none;
+  }
+
+  .site-nav > ul {
+    gap: 0.9rem;
   }
 }
 
 .site-menu-button {
   display: inline-flex;
   align-items: center;
-  gap: 0.35rem;
   padding: 0.2rem 0.5rem;
   border: 0;
   border-radius: 2px;
@@ -139,22 +166,33 @@ hr {
   font-family: var(--mono);
   font-size: 0.7rem;
   cursor: pointer;
+
+  > span {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+  }
+
+  &[aria-expanded="true"] {
+    background: var(--accent);
+    color: var(--bg);
+    font-weight: 600;
+  }
+
+  &[aria-expanded="true"] .site-menu-button-closed,
+  &:not([aria-expanded="true"]) .site-menu-button-open {
+    display: none;
+  }
 }
 
+/* The Menu: groups of a top-level page and the pages under it, in columns, or stacked between
+   rules on phones. A strong rule closes it off from the page. */
 .site-menu {
-  position: absolute;
-  right: 0;
-  top: 100%;
-  z-index: 5;
   display: grid;
-  grid-template-columns: repeat(3, minmax(10rem, 1fr));
-  gap: 1rem 2rem;
-  width: min(40rem, 100%);
-  margin-top: 0.5rem;
-  padding: 1.25rem 1.5rem;
-  border: 1px solid var(--rule);
-  background: var(--bg);
-  box-shadow: 0 8px 24px rgb(0 0 0 / 0.08);
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  gap: 1.25rem 2rem;
+  padding: 1.25rem 0 1.5rem;
+  border-bottom: 2px solid var(--rule-strong);
 
   &[hidden] {
     display: none;
@@ -166,18 +204,8 @@ hr {
     list-style: none;
   }
 
-  li {
-    font-size: 0.95rem;
-    line-height: 1.6;
-  }
-
-  .nav-header {
-    margin-bottom: 0.25rem;
-    color: var(--text-faint);
-    font-family: var(--mono);
-    font-size: 0.7rem;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
+  .site-menu-children {
+    margin-top: 0.3rem;
   }
 
   a {
@@ -185,6 +213,51 @@ hr {
 
     &:hover {
       text-decoration: underline;
+    }
+  }
+
+  a.site-menu-here {
+    color: var(--accent);
+    font-weight: 600;
+  }
+}
+
+.site-menu-top {
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+.site-menu-top + .site-menu-top {
+  margin-top: 0.35rem;
+}
+
+.site-menu-children li {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.site-menu-here-note {
+  color: var(--accent);
+  font-family: var(--mono);
+  font-size: 0.65rem;
+}
+
+@media (max-width: 639.98px) {
+  .site-menu {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0;
+    padding-top: 0.5rem;
+
+    .site-menu-group {
+      padding: 0.75rem 0;
+    }
+
+    .site-menu-group + .site-menu-group {
+      border-top: 1px solid var(--rule);
+    }
+
+    .site-menu-children {
+      padding-left: 1rem;
     }
   }
 }
@@ -326,6 +399,145 @@ th {
   color: var(--text);
 }
 
+/* Work page (work.njk): the publications and projects as cards, then the rest as rows. The title
+   matches the list pages on the dynamic site (press, reading). -------------------------------- */
+
+.site-main.work {
+  max-width: none;
+}
+
+.work-title {
+  margin: 0 0 0.9rem;
+  font-size: clamp(2.4rem, 6vw, 3.6rem);
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  line-height: 1.02;
+}
+
+.work-intro {
+  max-width: var(--text-width);
+  margin: 0;
+  font-size: 1.15rem;
+}
+
+.work-section-heading {
+  margin: 2.5rem 0 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--rule);
+  color: var(--text-muted);
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.work-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1.25rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.site-main .work-cards li + li {
+  margin-top: 0;
+}
+
+.work-card {
+  display: flex;
+  flex-direction: column;
+  padding: 1.1rem 1.1rem 1.2rem;
+  border: 1px solid var(--rule);
+}
+
+.work-card-label {
+  margin: 0;
+  color: var(--accent);
+  font-family: var(--mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.work-card-title {
+  margin: 0.5rem 0 0.4rem;
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 1.2;
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.work-card-description {
+  flex: 1;
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.work-card-link {
+  margin: 1rem 0 0;
+  font-family: var(--mono);
+  font-size: 0.68rem;
+
+  a {
+    color: var(--accent);
+  }
+}
+
+.work-elsewhere {
+  max-width: var(--text-width);
+}
+
+.work-rows {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.site-main .work-rows li + li {
+  margin-top: 0;
+}
+
+.work-row {
+  display: grid;
+  grid-template-columns: 11rem minmax(0, 1fr);
+  gap: 0.5rem 1.5rem;
+  padding: 1.1rem 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+.work-row-title {
+  font-weight: 600;
+  line-height: 1.35;
+  text-decoration: none;
+
+  span {
+    color: var(--accent);
+    font-family: var(--mono);
+    font-size: 0.75rem;
+    font-weight: 400;
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.work-row-description {
+  margin: 0;
+  font-size: 0.98rem;
+  line-height: 1.5;
+}
+
 // Phones -----------------------------------------------------------------------------------------
 
 @media (max-width: 720px) {
@@ -333,7 +545,12 @@ th {
     padding: 1rem 1rem 3rem;
   }
 
-  .site-menu {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  .work-cards,
+  .work-row {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .work-row {
+    gap: 0.25rem;
   }
 }
