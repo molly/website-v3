@@ -25,15 +25,4 @@ path: "/social"
   }}
   {% endfor %}
 </ul>
-<h2 id="ftc">
-  <i>Follow the Crypto</i>
-</h2>
-<p><i>Follow the Crypto</i> has social media feeds:</p>
-<ul>
-  {% for link in ftcSocialLinks %}
-  {{
-    socialMacro.socialLink(link)
-  }}
-  {% endfor %}
-</ul>
 {% endblock %}

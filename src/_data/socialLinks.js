@@ -52,6 +52,7 @@ const data = [
     label: "Twitter",
     href: "https://twitter.com/molly0xFFF",
     username: "molly0xfff",
+    active: true,
   },
   {
     label: "YouTube",

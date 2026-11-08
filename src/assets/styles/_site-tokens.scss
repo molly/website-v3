@@ -1,0 +1,56 @@
+// The redesign's colours and type, the same as the dynamic site's css/site.css. The older names
+// below them keep the page-specific rules (_pages.scss) working.
+@mixin dark-tokens {
+  --text: #ededed;
+  --text-muted: #a9a9a9;
+  --text-faint: #8a8a8a;
+  --bg: #161616;
+  --rule: #333333;
+  --rule-strong: #ededed;
+  --accent: #b4abda;
+  --accent-tint: #2c2840;
+  --accent-wash: #1f1d29;
+  --quote-rule: #5b5185;
+  --chip-border: #444444;
+}
+
+:root {
+  --text: #1b1b1b;
+  --text-muted: #6f6f6f;
+  --text-faint: #8d8d8d;
+  --bg: #ffffff;
+  --rule: #e6e6e6;
+  --rule-strong: #1b1b1b;
+  --accent: #5948a4;
+  --accent-tint: #efedf8;
+  --accent-wash: #f6f5fa;
+  --quote-rule: #c9c1ea;
+  --chip-border: #d9d9d9;
+
+  --serif: "Newsreader Variable", Georgia, "Times New Roman", serif;
+  --mono: "JetBrains Mono Variable", ui-monospace, SFMono-Regular, Menlo, monospace;
+  --quote-face: "Instrument Serif", "Newsreader Variable", Georgia, serif;
+
+  --page-width: 64rem;
+  --text-width: 42rem;
+
+  --bg-color: var(--bg);
+  --main-text-color: var(--text);
+  --secondary-text-color: var(--text-muted);
+  --note-text-color: var(--text-muted);
+  --link-text-hover-color: var(--accent);
+  --accent-color-purple: var(--accent);
+  --note-background-color: var(--accent-wash);
+  --hr-color: var(--rule);
+  --table-border-color: var(--rule);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    @include dark-tokens;
+  }
+}
+
+:root[data-theme="dark"] {
+  @include dark-tokens;
+}

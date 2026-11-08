@@ -1,14 +1,19 @@
 {% extends "layouts/base.njk" %}
 
+{# Pages with the site header: the redesign's styles, header and Menu (the dynamic site's
+   pug/templates/includes/siteHeader.pug and siteMenu.pug have the same markup). #}
+{% block stylesheet %}<link rel="stylesheet" href="/assets/styles/site-styles.css" />{% endblock %}
+
 {% block pagecontent %}
-  <div class="page-container {{page_class}}">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="site-page">
     {% include "nav.njk" %}
-    <main>
+    <main id="main" class="site-main {{page_class}}">
       {% block content %}{% endblock %}
     </main>
   </div>
 {% endblock %}
 
 {% block js %}
-  <script src="https://www.mollywhite.net/assets/js/nav.js"></script>
+  <script src="/assets/js/site-menu.js"></script>
 {% endblock %}
