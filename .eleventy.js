@@ -11,6 +11,7 @@ module.exports = function (eleventyConfig) {
     "src/assets/js": "assets/js",
     "src/assets/images": "assets/images",
     "src/site.webmanifest": "",
+    "src/robots.txt": "",
     "node_modules/@fortawesome/fontawesome-free":
       "assets/fonts/fontawesome-free",
   });

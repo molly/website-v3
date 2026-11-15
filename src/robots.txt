@@ -1,0 +1,6 @@
+# The reading lists and press page can be filtered by any combination of tags, status, type,
+# order, and page, which makes for endless URLs. Crawl the lists themselves, not every filter.
+User-agent: *
+Disallow: /reading/books?
+Disallow: /reading/shortform?
+Disallow: /press?
